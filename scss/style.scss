@@ -1,15 +1,22 @@
 @import "./variables.scss";
-.block__fone{
-    background:url('./../images/fone.png');
+
+.block__fone {
+    background: url('./../images/fone.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:bottom center;
-    height: 813px;
+    background-position: bottom center;
+    height: 100vh;
     flex-shrink: 0;
+
 }
+
 .header {
+    z-index: 1;
+    position: relative;
     padding-bottom: 146px;
-    background: var(--gradient-color-gradient-violet-header, linear-gradient(180deg, #B661EA 0%, rgba(47, 47, 47, 0.00) 100%));
+    background: linear-gradient(180deg, #B661EA 0%, rgba(47, 47, 47, 0.00) 100%);
+    height: 361px;
+
     &__row {
         display: flex;
         flex-direction: row;
@@ -22,6 +29,7 @@
         max-width: 133.3rem;
         margin: 0 auto;
         padding: 0 1.5rem;
+        margin-bottom: 146px;
     }
 
     .nav {
@@ -32,7 +40,7 @@
             font-family: 'Montserrat';
             line-height: 24px;
             margin-right: 23px;
-            
+
             &:last-child {
                 margin-right: 0;
             }
@@ -44,5 +52,103 @@
         font-size: 2rem;
         font-family: 'Montserrat';
         line-height: 24px;
+    }
+}
+
+.school {
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 99;
+    }
+
+    &__desc {
+        color: $text-color-text-white;
+        text-align: center;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 48px;
+        font-family: 'Fauna One';
+        line-height: 40px;
+        margin-bottom: 44px;
+    }
+
+    &__name {
+        color: $color-decor-violett;
+        text-align: center;
+        text-shadow: 7px 9px 5px rgba(97, 5, 153, .60);
+        font-size: 120px;
+        font-family: 'Cinzel';
+        font-weight: 700;
+        line-height: 76px;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+
+        &::after {
+            z-index: -1;
+            content: '';
+            width: 579px;
+            height: 579px;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 115px;
+            text-align: center;
+            background-image: url('./../images/team.png');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__link {
+        color: $text-color-text-black;
+        background-color: $colorButtonprimaryNormal;
+        font-size: 32px;
+        font-family: Montserrat;
+        font-weight: 700;
+        max-width: 339px;
+        width: 100%;
+        height: 79px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 145px;
+        transition: background-color 0.2s ease-out;
+
+        &:hover {
+            background-color: $colorButtonprimaryHover;
+        }
+    }
+}
+
+.winners {
+    display: flex;
+    justify-content: center;
+    &__body {
+        max-width: 1050px;
+        height: 48px;
+    }
+    
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 64px;
+        font-size: 20px;
+        color: $text-color-text-white-60;
+        text-align: center;
+        font-family: 'Montserrat';
+        line-height: 24px;
+    }
+    &__win{
+        max-width: 333px;
+    }
+    &__baby{
+        max-width: 256px;
+    }
+    &__hals{
+        max-width: 333px;
     }
 }
