@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  height: 100vh;
+  min-height: 831px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -57,6 +57,43 @@
   line-height: 24px;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 19px;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+.social a {
+  color: #FAF3FF;
+}
+.social a:hover {
+  color: #B661EA;
+}
+.social::after {
+  content: "";
+  height: 256px;
+  width: 3px;
+  background-color: #FAF3FF;
+}
+.social::before {
+  content: "";
+  height: 256px;
+  width: 3px;
+  background-color: #FAF3FF;
+}
+
 .school__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,7 +111,7 @@
   color: #FAF3FF;
   text-align: center;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-size: 48px;
+  font-size: 4.8rem;
   font-family: "Fauna One";
   line-height: 40px;
   margin-bottom: 44px;
@@ -83,7 +120,7 @@
   color: #B661EA;
   text-align: center;
   text-shadow: 7px 9px 5px rgba(97, 5, 153, 0.6);
-  font-size: 120px;
+  font-size: 12rem;
   font-family: "Cinzel";
   font-weight: 700;
   line-height: 76px;
@@ -108,7 +145,7 @@
 .school__link {
   color: #121212;
   background-color: #B661EA;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-family: Montserrat;
   font-weight: 700;
   max-width: 339px;
@@ -154,7 +191,7 @@
   -webkit-column-gap: 64px;
      -moz-column-gap: 64px;
           column-gap: 64px;
-  font-size: 20px;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-family: "Montserrat";
@@ -168,4 +205,83 @@
 }
 .winners__hals {
   max-width: 333px;
+}
+
+.directions {
+  margin-top: 176px;
+}
+.directions .container__directions {
+  max-width: 1292px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.directions__body__title {
+  color: #FAF3FF;
+  font-size: 4.8rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 56px;
+  position: relative;
+  text-align: right;
+  margin-bottom: 80px;
+}
+.directions__body__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  margin-top: 2px;
+  max-width: 410px;
+  width: 100%;
+  height: 3px;
+  background: #B661EA;
+}
+.directions__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 112px;
+     -moz-column-gap: 112px;
+          column-gap: 112px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.directions__col__row {
+  max-width: 229px;
+  width: 100%;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.directions .directions__col__top2 {
+  margin-top: 80px;
+  margin-bottom: 176px;
+}
+.directions__col__bottom {
+  margin-top: 176px;
+  margin-bottom: 80px;
+}
+.directions__col__name {
+  color: #FAF3FF;
+  text-align: center;
+  font-size: 4rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 48px;
+}
+.directions__col__video {
+  color: rgba(182, 97, 234, 0.5);
+  font-size: 2.4rem;
+  font-family: Montserrat;
+  line-height: 32px;
+  text-decoration: underline;
+  text-underline-position: under;
 }
