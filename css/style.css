@@ -1,3 +1,11 @@
+.textShadow {
+  text-shadow: 7px 9px 5px rgba(97, 5, 153, 0.6);
+}
+
+.hover {
+  color: #B661EA;
+}
+
 .block__fone {
   background: url("./../images/fone.png");
   background-repeat: no-repeat;
@@ -208,7 +216,10 @@
 }
 
 .directions {
-  margin-top: 176px;
+  margin-top: 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
 .directions .container__directions {
   max-width: 1292px;
@@ -243,13 +254,11 @@
   -webkit-column-gap: 112px;
      -moz-column-gap: 112px;
           column-gap: 112px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  text-align: center;
 }
 .directions__col__row {
   max-width: 229px;
   width: 100%;
-  height: 91px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +270,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.directions .directions__col__top2 {
+.directions__col__top2 {
   margin-top: 80px;
   margin-bottom: 176px;
 }
@@ -273,15 +282,253 @@
   color: #FAF3FF;
   text-align: center;
   font-size: 4rem;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 500;
   line-height: 48px;
 }
 .directions__col__video {
   color: rgba(182, 97, 234, 0.5);
   font-size: 2.4rem;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   line-height: 32px;
   text-decoration: underline;
   text-underline-position: under;
+}
+
+.choreographers {
+  margin-top: 40px;
+  background: url("./../images/fone-chore.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 768px;
+}
+.choreographers__container {
+  max-width: 1324px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  color: #FAF3FF;
+  font-family: "Montserrat";
+}
+.choreographers__col {
+  width: 410px;
+  height: 460px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  border: 1px solid #9E9E9E;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  position: relative;
+}
+.choreographers__col__block img {
+  width: 311px;
+  height: 311px;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.choreographers__col__block img:hover {
+  width: 394px;
+  height: 450px;
+  border-radius: 10px;
+}
+.choreographers__name {
+  text-align: center;
+  padding-top: 55px;
+  margin-bottom: 80px;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 56px;
+}
+.choreographers__col__block {
+  max-width: 410px;
+  max-height: 410px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.choreographers__col__block:hover {
+  border-radius: 10px;
+  max-width: 411px;
+  max-height: 438px;
+  width: 100%;
+  height: 100%;
+}
+.choreographers__col__text {
+  position: absolute;
+  bottom: 26px;
+}
+.choreographers__row {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  overflow-y: scroll;
+  height: 500px;
+  scrollbar-width: none;
+}
+.choreographers__row::-webkit-scrollbar {
+  width: 0px;
+}
+.choreographers__col__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 21px;
+     -moz-column-gap: 21px;
+          column-gap: 21px;
+}
+.choreographers__col__dance {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.choreographers__col__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  line-height: 24px;
+  position: relative;
+  height: 39px;
+}
+
+table.iksweb {
+  width: 100%;
+  border-spacing: 0;
+  height: auto;
+}
+
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+  border-top: 0px solid #B661EA;
+  border-left: 0px solid #B661EA;
+  border-collapse: collapse;
+}
+
+table.iksweb th :hover {
+  color: #193616;
+}
+
+table.iksweb td,
+table.iksweb th {
+  padding: 3px;
+  width: 184px;
+  height: 200px;
+}
+
+table.iksweb th {
+  font-weight: normal;
+}
+
+td {
+  border: 1px solid;
+}
+
+td:nth-child(7n) {
+  border-right: 0px solid #B661EA;
+}
+
+.none td {
+  border-bottom: 0px solid #B661EA;
+}
+
+.box .box__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.box__body__desc__style {
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.box__body__desc__type {
+  color: #FB2F2F;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.box__body__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box__time {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  top: -52px;
+}
+
+table .iksweb__hall {
+  text-align: center;
+  color: #FAF3FF;
+  font-size: 3.3rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+table .iksweb__day, table .iksweb__clock {
+  text-align: center;
+  color: #FAF3FF;
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }

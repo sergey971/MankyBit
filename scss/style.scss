@@ -1,5 +1,13 @@
 @import "./variables.scss";
 
+.textShadow {
+    text-shadow: 7px 9px 5px rgba(97, 5, 153, 0.6);
+}
+
+.hover {
+    color: $colorDecorViolett;
+}
+
 .block__fone {
     background: url('./../images/fone.png');
     background-repeat: no-repeat;
@@ -192,16 +200,12 @@
 }
 
 .directions {
-    margin-top: 176px;
+    margin-top: 40px;
 
     .container__directions {
         max-width: 1292px;
         margin: 0 auto;
         padding: 0px 15px;
-    }
-
-    &__body {
-        // height: max-content;
     }
 
     &__body__title {
@@ -213,7 +217,8 @@
         position: relative;
         text-align: right;
         margin-bottom: 80px;
-        &::after{
+
+        &::after {
             position: absolute;
             content: '';
             bottom: 0;
@@ -222,27 +227,28 @@
             max-width: 410px;
             width: 100%;
             height: 3px;
-            background: #B661EA;;
+            background: #B661EA;
+            ;
         }
     }
 
     &__row {
         display: flex;
         column-gap: 112px;
-        // align-items: center;
-        flex-wrap: wrap;
+        text-align: center;
 
     }
 
     &__col__row {
         max-width: 229px;
         width: 100%;
-        height: 91px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &
+
+    flex: 0 1 25%;
+
     &__col__top2 {
         margin-top: 80px;
         margin-bottom: 176px;
@@ -257,7 +263,7 @@
         color: $text-color-text-white;
         text-align: center;
         font-size: 4rem;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-weight: 500;
         line-height: 48px;
     }
@@ -265,10 +271,251 @@
     &__col__video {
         color: $colorDecorViolet50;
         font-size: 2.4rem;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         line-height: 32px;
         text-decoration: underline;
         text-underline-position: under;
     }
+}
+
+.choreographers {
+    margin-top: 40px;
+    background: url('./../images/fone-chore.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 768px;
+
+    &__container {
+        max-width: 1324px;
+        margin: 0 auto;
+        padding: 0px 15px;
+        color: $text-color-text-white;
+        font-family: 'Montserrat';
+    }
+
+    &__col {
+        width: 410px;
+        height: 460px;
+        position: relative;
+        z-index: 1;
+        border-radius: 10px;
+        border: 1px solid $colorDecorGray;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 30%;
+        position: relative;
+
+        &:hover {}
+    }
+
+    &__col__block img {
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            width: 394px;
+            height: 450px;
+            border-radius: 10px;
+        }
+    }
+
+    &__name {
+        text-align: center;
+        padding-top: 55px;
+        margin-bottom: 80px;
+        font-size: 4.8rem;
+        font-weight: 600;
+        line-height: 56px;
+    }
+
+    &__col__block {
+        max-width: 410px;
+        max-height: 410px;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: all .3s ease-out;
+
+        &:hover {
+            border-radius: 10px;
+            max-width: 411px;
+            max-height: 438px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__col__text {
+        position: absolute;
+        bottom: 26px;
+    }
+
+    &__row {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        overflow-y: scroll;
+        height: 500px;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+
+    &__col__item {
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+    }
+
+    &__col__dance {
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    &__col__name {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 24px;
+        position: relative;
+        height: 39px;
+    }
 
 }
+
+
+table.iksweb {
+    width: 100%;
+    border-spacing: 0;
+    height: auto;
+
+}
+
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+    border-top: 0px solid #B661EA;
+    border-left: 0px solid #B661EA;
+    border-collapse: collapse;
+
+}
+
+table.iksweb th :hover {
+    color: #193616;
+
+
+}
+
+table.iksweb td,
+table.iksweb th {
+    padding: 3px;
+    width: 184px;
+    height: 200px;
+}
+
+table.iksweb th {
+    font-weight: normal;
+}
+
+td {
+    border: 1px solid;
+}
+
+td:nth-child(7n) {
+    border-right: 0px solid #B661EA;
+}
+
+.none td {
+    border-bottom: 0px solid #B661EA;
+}
+.box .box__time{
+    display: flex;
+    align-items: start;
+}
+.box__body__desc__style {
+    color: $color-decor-white-30;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.box__body__desc__type {
+    color: $color-fault-red;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.box__body__desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box__time {
+    color: $color-decor-white-30;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    top: -52px;
+}
+
+table .iksweb {
+    &__hall {
+        text-align: center;
+        color: $text-color-text-white;
+        font-size: 3.3rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    &__day,
+    &__clock {
+        text-align: center;
+        color: $text-color-text-white;
+        font-size: 2.4rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+
+
+
+}
+
+// .iksweb th, .iksweb td {
+// 	position: relative;
+// }
+
+// .iksweb td:hover:after {
+// 	content: '';
+// 	position: absolute;
+// 	top: 0px;
+// 	right: 0px; 
+// 	bottom: 0px;    
+// 	left: 0px;
+// 	border: 6px solid #B661EA;
+// }
