@@ -5,7 +5,11 @@
 }
 
 .hover {
-    color: $colorDecorViolett;
+    color: $colorDecorViolett !important;
+}
+
+.tableNone {
+    display: none !important;
 }
 
 .block__fone {
@@ -268,12 +272,13 @@
         line-height: 48px;
     }
 
-    &__col__video {
+    &__col__video__link {
+        display: inline-block;
         color: $colorDecorViolet50;
         font-size: 2.4rem;
         font-family: 'Montserrat';
         line-height: 32px;
-        text-decoration: underline;
+        text-decoration: underline !important;
         text-underline-position: under;
     }
 }
@@ -293,6 +298,8 @@
         color: $text-color-text-white;
         font-family: 'Montserrat';
     }
+
+
 
     &__col {
         width: 410px;
@@ -393,6 +400,48 @@
 
 }
 
+.schedule {
+    &__body {
+        position: relative;
+
+        &::after {
+            content: '';
+            background: url('./../images/DecorCircle.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 183px;
+            height: 452px;
+            top: -209px;
+            right: 0;
+
+        }
+    }
+
+    &__name h2 {
+        color: $text-color-text-white;
+        font-size: 4.8rem;
+        font-family: "Montserrat";
+        font-weight: 600;
+        line-height: 56px;
+        position: relative;
+        text-align: left;
+        margin-top: 80px;
+        margin-bottom: 64px;
+
+    }
+
+    &__name h2::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        margin-top: 2px;
+        max-width: 410px;
+        width: 100%;
+        height: 3px;
+        background: #B661EA;
+    }
+}
 
 table.iksweb {
     width: 100%;
@@ -421,6 +470,7 @@ table.iksweb th {
     padding: 3px;
     width: 184px;
     height: 200px;
+    color: $colorDecorViolett;
 }
 
 table.iksweb th {
@@ -438,10 +488,12 @@ td:nth-child(7n) {
 .none td {
     border-bottom: 0px solid #B661EA;
 }
-.box .box__time{
+
+.box .box__time {
     display: flex;
     align-items: start;
 }
+
 .box__body__desc__style {
     color: $color-decor-white-30;
     text-align: center;
@@ -500,9 +552,122 @@ table .iksweb {
         font-weight: 400;
         line-height: 32px;
     }
+}
 
+.table__link__table {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
 
+    .table__link {
+        display: flex;
+        justify-content: center;
+        color: $text-color-text-black;
+        background-color: $colorButtonprimaryNormal;
+        font-size: 2rem;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        max-width: 326px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 145px;
+        transition: background-color 0.2s ease-out;
 
+        &:hover {
+            background-color: $colorButtonprimaryHover;
+        }
+    }
+}
+
+.price {
+    &__body {
+        display: flex;
+        justify-content: center;
+        height: 567px;
+        margin: 0 auto;
+        max-width: 1070px;
+        background: var(--gradient-color-gradient-violet-left, linear-gradient(89deg, #B661EA 0%, #000 100%));
+        background-position: center;
+        clip-path: polygon(50% 0%, 100% 0, 100% 80%, 77% 80%, 77% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
+    }
+
+    &__block1__col__box {
+        display: flex;
+        column-gap: 8px;
+        
+    }
+    &__block1__col__box--margin{
+        margin-top: 9px;
+    }
+    &__block1__row {
+        padding-top: 34px;
+        padding-left: 73px;
+        display: flex;
+        align-items: center;
+        column-gap: 64px;
+
+        h4 {
+            color: $text-color-text-white;
+            font-size: 3.6rem;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+        }
+    }
+
+    &__block1__col__item {
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+        width: 300px;
+        align-items: center;
+        border-radius: 10px;
+        background: $color-decor-violet-50;
+        height: 106px;
+
+        h5 {
+            color: $text-color-text-white;
+            text-align: center;
+            font-size: 3.2rem;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+        }
+    }
+
+    &__block1__col__item__сlock {
+        display: flex;
+        flex-direction: column;
+        column-gap: 8px;
+        width: 300px;
+        border-radius: 10px;
+        background: $color-decor-violet-50;
+        height: 106px;
+
+        .clock {
+            color: $text-color-text-white;
+            font-size: 2.4rem;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            display: flex;
+            justify-content: center;
+            margin: auto ;
+        }
+    }
+    &__block1__col__item--otherBg, &__block1__col__item__сlock--otherBG{
+        background: $color-decor-white-10;
+    }
+    .hr-line{
+        border: 1px solid rgba(255, 255, 255, 0.10);
+    }
 
 }
 
