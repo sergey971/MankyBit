@@ -290,6 +290,7 @@
     background-size: cover;
     background-position: bottom center;
     height: 768px;
+    overflow-y: hidden;
 
     &__container {
         max-width: 1324px;
@@ -406,7 +407,7 @@
 
         &::after {
             content: '';
-            background: url('./../images/DecorCircle.png');
+            background: url('../images/DecorCircle\ 2.png');
             background-repeat: no-repeat;
             position: absolute;
             width: 183px;
@@ -584,25 +585,46 @@ table .iksweb {
 }
 
 .price {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -173px;
+        left: 176px;
+        background: url(../images/DecorCircle.png);
+        background-repeat: no-repeat;
+        width: 453px;
+        height: 453px;
+
+    }
+
     &__body {
-        display: flex;
-        justify-content: center;
-        height: 567px;
-        margin: 0 auto;
-        max-width: 1070px;
-        background: var(--gradient-color-gradient-violet-left, linear-gradient(89deg, #B661EA 0%, #000 100%));
-        background-position: center;
-        clip-path: polygon(50% 0%, 100% 0, 100% 80%, 77% 80%, 77% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
+        background: url('../images/Subtract.png');
+        background-repeat: no-repeat;
+        padding-bottom: 62px;
+        // display: flex;
+        // justify-content: center;
+        // height: 567px;
+        // margin: 0 auto;
+        // max-width: 1070px;
+        // background: $gradient-color-gradient-violet-left;
+        // background-position: center;
+        // clip-path: polygon(50% 0, 100% 0, 100% 80%, 77% 80%, 77% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
+        // margin-bottom: 100px;
+        // border-radius: 10px;
     }
 
     &__block1__col__box {
         display: flex;
         column-gap: 8px;
-        
+
     }
-    &__block1__col__box--margin{
+
+    &__block1__col__box--margin {
         margin-top: 9px;
     }
+
     &__block1__row {
         padding-top: 34px;
         padding-left: 73px;
@@ -659,17 +681,328 @@ table .iksweb {
             line-height: 32px;
             display: flex;
             justify-content: center;
-            margin: auto ;
+            margin: auto;
         }
     }
-    &__block1__col__item--otherBg, &__block1__col__item__сlock--otherBG{
+
+    &__block1__col__item--otherBg,
+    &__block1__col__item__сlock--otherBG {
         background: $color-decor-white-10;
     }
-    .hr-line{
+
+    .hr-line {
         border: 1px solid rgba(255, 255, 255, 0.10);
     }
 
+    &__block2 {
+        margin-top: 46px;
+    }
+
+    &__block2__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__block2__colm {
+        display: flex;
+        column-gap: 72px;
+        justify-content: end;
+        max-width: 980px;
+    }
+
+    &__block2__colm2 {
+        display: flex;
+        align-items: center;
+        max-width: 1008px;
+        height: 62px;
+        width: 100%;
+        border-radius: 10px;
+        background: $color-decor-white-10;
+    }
+
+    &__block2__item__desc {
+        color: $text-color-text-white;
+        font-size: 3.6rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    &__block2__item__price {
+        color: $text-color-text-white, #FAF3FF;
+        font-size: 2.4rem;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+
+    }
+
+    &__block2__item__price--200 {
+        padding-left: 61px;
+    }
+
+    &__block2__item__price--400 {
+        padding-left: 150px;
+    }
+
+    &__block2__item__price--1600 {
+        padding-left: 150px;
+    }
+
+    &__block2__item__price--2600 {
+        padding-left: 180px;
+    }
+
+    &__block2__quest {
+        margin-top: 90px;
+        color: $text-color-text-white;
+        font-family: 'Montserrat';
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-left: 17px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1084px;
+        position: relative;
+        z-index: 1;
+        top: -49px;
+        left: 51px;
+
+        a {
+            color: $text-color-text-white;
+            font-family: "Montserrat";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 20px 70px;
+            border-radius: 10px;
+            background: $button-color-button-2-dark;
+            box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.50);
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100px;
+            box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.50);
+            border-radius: 342px;
+            background: $color-decor-violett;
+            filter: blur(50px);
+            z-index: -1;
+        }
+
+    }
 }
+
+.win {
+    margin-bottom: 113px;
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        h2 {
+            color: $text-color-text-white;
+            font-family: 'Montserrat';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 116%;
+        }
+    }
+
+    &__Russia {
+        margin-bottom: 40px;
+
+        h3 {
+            color: $text-color-text-white-60;
+            font-family: 'Montserrat';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 48px;
+
+        ul {
+            li {
+                color: $text-color-text-white;
+                text-align: center;
+                font-family: 'Montserrat';
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 111%;
+            }
+        }
+    }
+
+    &__respublic {
+        margin-bottom: 40px;
+
+        h3 {
+            color: $text-color-text-white-60;
+            font-family: 'Montserrat';
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+        }
+
+        ul {
+            li {
+                color: $text-color-text-white;
+                text-align: center;
+                font-family: 'Montserrat';
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 111%;
+            }
+        }
+    }
+}
+
+.map {
+    &__container {
+
+        position: relative;
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 99px;
+    }
+
+    &__quest {
+        z-index: 2;
+        margin-top: 19px;
+    }
+
+    &__container::after {
+        content: "";
+        width: 464px;
+        height: 396.509px;
+        position: absolute;
+        top: -238px;
+        right: -288px;
+        z-index: 1;
+        background: #171717;
+        border-radius: 464px;
+    }
+
+    .gis2 {
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__title {
+            color: $text-color-text-white;
+            font-family: 'Montserrat';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 111%;
+        }
+
+        &__img {
+            z-index: 2;
+        }
+    }
+
+    &__quest__row {
+        display: flex;
+        flex-direction: column;
+        max-width: 520px;
+    }
+
+    &__quest__title {
+        width: 100%;
+        margin-bottom: 10px;
+
+        h3 {
+            color: $text-color-text-white;
+            font-family: 'Montserrat';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 111%;
+        }
+    }
+
+    &__quest__text {
+        h3 {
+            color: $text-color-text-white;
+            font-family: 'Montserrat';
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 111%;
+        }
+
+        margin-bottom: 16px;
+
+    }
+
+    form {
+        input[type="text"] {
+            max-width: 250px;
+            border-radius: 10px;
+            border: 1px solid $color-foneandicon-rosy-white;
+            color: $color-decor-gray;
+            font-family: 'Montserrat';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            padding: 8px 16px;
+        }
+
+        .name {
+            margin-bottom: 32px;
+        }
+
+        .form__row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btnForm {
+            margin-top: 32px;
+            border-radius: 10px;
+            background: $button-color-buttonprimary-normal;
+            width: 134px;
+            height: 40px;
+            box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.50);
+            color: $text-color-text-black;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
 
 // .iksweb th, .iksweb td {
 // 	position: relative;
