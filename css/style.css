@@ -1033,3 +1033,53 @@ table .iksweb__day, table .iksweb__clock {
   font-weight: 700;
   line-height: normal;
 }
+
+.footer {
+  margin-top: 5.6rem;
+  background: var(--gradient-color-gradient-violet-futer, linear-gradient(to top, #B661EA 0%, rgba(47, 47, 47, 0) 85.41%));
+}
+.footer__container {
+  max-width: 133.3rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__container {
+  max-width: 133.3rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  margin-bottom: 16px;
+}
+.footer .nav__link {
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #FAF3FF;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  line-height: 24px;
+  margin-right: 23px;
+}
+.footer .nav__link:last-child {
+  margin-right: 0;
+}
+.footer__phohe a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+  font-family: "Montserrat";
+  line-height: 24px;
+}
