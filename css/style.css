@@ -629,7 +629,6 @@ table .iksweb__day, table .iksweb__clock {
   height: 453px;
 }
 .price__body {
-  background: url("../images/Subtract.png");
   background-repeat: no-repeat;
   padding-bottom: 62px;
 }
@@ -927,17 +926,6 @@ table .iksweb__day, table .iksweb__clock {
 .map__quest {
   z-index: 2;
   margin-top: 19px;
-}
-.map__container::after {
-  content: "";
-  width: 464px;
-  height: 396.509px;
-  position: absolute;
-  top: -238px;
-  right: -288px;
-  z-index: 1;
-  background: #171717;
-  border-radius: 464px;
 }
 .map .gis2__row {
   display: -webkit-box;
