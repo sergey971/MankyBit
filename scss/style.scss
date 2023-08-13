@@ -600,7 +600,7 @@ table .iksweb {
     }
 
     &__body {
-        background: url('../images/Subtract.png');
+        // background: url('../images/Subtract.png');
         background-repeat: no-repeat;
         padding-bottom: 62px;
         // display: flex;
@@ -896,17 +896,17 @@ table .iksweb {
         margin-top: 19px;
     }
 
-    &__container::after {
-        content: "";
-        width: 464px;
-        height: 396.509px;
-        position: absolute;
-        top: -238px;
-        right: -288px;
-        z-index: 1;
-        background: #171717;
-        border-radius: 464px;
-    }
+    // &__container::after {
+    //     content: "";
+    //     width: 464px;
+    //     height: 396.509px;
+    //     position: absolute;
+    //     top: -238px;
+    //     right: -288px;
+    //     z-index: 1;
+    //     background: #171717;
+    //     border-radius: 464px;
+    // }
 
     .gis2 {
         &__row {
