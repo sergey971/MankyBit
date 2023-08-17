@@ -41,7 +41,13 @@
 
         }
     }
+    .directions{
 
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
     .social {
         left: 1%;
     }
