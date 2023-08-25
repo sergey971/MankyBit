@@ -4,8 +4,37 @@
     text-shadow: 7px 9px 5px rgba(97, 5, 153, 0.6);
 }
 
+.title--left {
+    color: $text-color-text-white;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 56px;
+    position: relative;
+    text-align: right;
+
+    ::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        margin-top: 2px;
+        max-width: 410px;
+        width: 100%;
+        height: 3px;
+        background: #B661EA;
+    }
+}
+
 .hover {
     color: $colorDecorViolett !important;
+}
+
+.choreographers__container {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    color: $text-color-text-white;
+    font-family: 'Montserrat';
 }
 
 .tableNone {
@@ -101,271 +130,117 @@
     }
 }
 
-.history {
-    &__container {
-        max-width: 1292px;
-        margin: 0 auto;
-        padding: 0px 15px;
-    }
-
-    &__row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__title {
-        margin-top: 40px;
-        color: $text-color-text-white;
-        font-size: 4.8rem;
-        font-weight: 600;
-        line-height: 56px;
-        position: relative;
-        text-align: right;
-        margin-bottom: 88px;
-
-        ::after {
-            position: absolute;
-            content: "";
-            bottom: 0;
-            right: 0;
-            margin-top: 2px;
-            max-width: 410px;
-            width: 100%;
-            height: 3px;
-            background: #B661EA;
-        }
-    }
-
-    &__manky__col__left {
-        img {
-            border-radius: 10px;
-        }
-    }
-
-    &__manky__row {
-        display: flex;
-        align-items: center;
-        column-gap: 114px;
-        margin-bottom: 101px;
-    }
-
-    &__manky__col__right {
-        max-width: 518px;
-
-        .oneP {
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: $text-color-text-white;
-            text-align: center;
-            font-size: 3.6rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 111%;
-        }
-
-        span {
-            color: $color-decor-violett;
-            font-size: 3.6rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 40px;
-        }
-    }
-
-    &__manky__text {
-        max-width: 1218px;
-        width: 100%;
-
-        p {
-            color: $text-color-text-white;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 125%;
-            margin-bottom: 30px;
-        }
-    }
-}
-
-.moments {
-    margin-bottom: 930px;
-    background-image: url("../images/moments/aboutImg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 955px;
-    height: 100%;
-    width: 100%;
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 931px;
-        left: 0;
-        background-image: url("./../images/moments/aboutImg2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-height: 955px;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
-
-    &__title {
-        margin-bottom: 80px;
-    }
-
-    &__photo__img__block {
-        position: relative;
-        max-width: 416px;
-        max-height: 278px;
-        height: 100%;
-        width: 100%;
-
-        img {
-            position: relative;
-            z-index: 2;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 14px;
-            /* Смещение вверх на 5px */
-            left: -12px;
-            /* Смещение влево на 5px */
-            border: 1px solid $color-foneandicon-rosy-white;
-            width: 106%;
-            height: 100%;
-            z-index: 1;
-            border-radius: 10px;
-        }
-    }
-
-    &__photo__img1,
-    &__photo__img3 {
-        z-index: 2;
-        display: flex;
-        column-gap: 419px;
-        margin-bottom: 79px;
-        border-radius: 10px;
-
-
-
-    }
-
-    &__photo__img5 {
-
-        z-index: 2;
-        display: flex;
-        column-gap: 419px;
-
-    }
-
-    &__photo__img2,
-    &__photo__img4 {
-        z-index: 2;
-        margin-bottom: 79px;
-        display: flex;
-        justify-content: center;
-    }
-
-
-    &__photo__img__block {
-        img {
-            border-radius: 10px;
-
-        }
-    }
-}
-
-.win {
-    padding-top: 38px;
-    margin-bottom: 113px;
-    background-image: url("../images/about/bg_about.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+.school {
 
     &__row {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    &__title {
-        h2 {
-            color: $text-color-text-white;
-            font-family: 'Montserrat';
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 116%;
-        }
-    }
-
-    &__Russia {
-        margin-bottom: 40px;
-
-        h3 {
-            color: $text-color-text-white-60;
-            font-family: 'Montserrat';
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 120%;
-        }
+        z-index: 99;
     }
 
     &__desc {
-        margin-bottom: 48px;
+        color: $text-color-text-white;
+        text-align: center;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 4.8rem;
+        font-family: 'Fauna One';
+        line-height: 40px;
+        margin-bottom: 44px;
+    }
 
-        ul {
-            li {
-                color: $text-color-text-white;
-                text-align: center;
-                font-family: 'Montserrat';
-                font-size: 36px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 111%;
+    &__name {
+        color: $color-decor-violett;
+        text-align: center;
+        text-shadow: 7px 9px 5px rgba(97, 5, 153, .60);
+        font-size: 12rem;
+        font-family: 'Cinzel';
+        font-weight: 700;
+        line-height: 76px;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+
+        &::after {
+            z-index: -1;
+            content: '';
+            width: 579px;
+            height: 579px;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 115px;
+            text-align: center;
+            background-image: url('./../images/team.png');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__link {
+        color: $text-color-text-black;
+        background-color: $colorButtonprimaryNormal;
+        font-size: 3.2rem;
+        font-family: Montserrat;
+        font-weight: 700;
+        max-width: 339px;
+        width: 100%;
+        height: 79px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-bottom: 145px;
+        transition: background-color 0.2s ease-out;
+
+        &:hover {
+            background-color: $colorButtonprimaryHover;
+        }
+    }
+}
+
+.rent {
+    &__title {
+        h2 {
+
+            color: #FAF3FF;
+            font-size: 4.8rem;
+            font-family: "Montserrat";
+            font-weight: 600;
+            line-height: 56px;
+            position: relative;
+            text-align: right;
+            margin-bottom: 80px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: 0;
+                right: 0;
+                margin-top: 2px;
+                max-width: 410px;
+                width: 100%;
+                height: 3px;
+                background: #B661EA;
             }
         }
     }
 
-    &__respublic {
-        margin-bottom: 40px;
 
-        h3 {
-            color: $text-color-text-white-60;
-            font-family: 'Montserrat';
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 120%;
-        }
-
-        ul {
-            li {
-                color: $text-color-text-white;
-                text-align: center;
-                font-family: 'Montserrat';
-                font-size: 36px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 111%;
-            }
-        }
-    }
 }
 
 .map {
     &__container {
 
         position: relative;
+    }
+
+    .choreographers__container {
+        max-width: 1324px;
+        margin: 0 auto;
+        padding: 0px 15px;
+        color: $text-color-text-white;
+        font-family: 'Montserrat';
     }
 
     &__row {
