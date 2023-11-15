@@ -247,6 +247,7 @@
     &__img__row {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     &__img__cols {
@@ -256,13 +257,16 @@
     &__img__row .rent__img__col:first-child {
         position: relative;
         z-index: -1;
-        left: 20px;
+        left: 83px;
+        max-width: 410px;
     }
 
     &__img__row .rent__img__col:last-child {
         position: relative;
         z-index: -1;
-        right: 20px;
+        right: 83px;
+        max-width: 410px;
+
     }
 
     &__img__col {

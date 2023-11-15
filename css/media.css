@@ -1,8 +1,6 @@
 @media (max-width: 1024px) {
   .directions__row {
-    -webkit-column-gap: 85px;
-       -moz-column-gap: 85px;
-            column-gap: 85px;
+    column-gap: 85px;
   }
   .schedule__body::after {
     right: -15px;
@@ -26,28 +24,18 @@
     margin-bottom: 47px;
   }
   .directions__row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .social {
     left: 1%;
   }
   .choreographers__col {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 47%;
-            flex: 0 0 47%;
+    flex: 0 0 47%;
   }
   .price__block1__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    flex-direction: column;
+    align-items: baseline;
     margin-left: 40px;
   }
   .price__block1__row h4 {
@@ -62,9 +50,7 @@
     font-size: 2.2rem;
   }
   .price__block2__colm {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .price__block2__item__desc {
     font-size: 2rem;
@@ -85,8 +71,7 @@
     padding-left: 88px;
   }
   .map__row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .win__Russia h3, .win__respublic h3 {
     font-size: 3.5rem;
@@ -98,12 +83,8 @@
     margin-bottom: 16px;
   }
   .map__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     text-align: center;
   }
   .footer .nav {
@@ -113,11 +94,116 @@
     margin-right: 16px;
   }
   .footer__row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .footer__phohe {
     margin-left: auto !important;
   }
 }
+@media (max-width: 500px) {
+  .wrapper__img {
+    width: 71%;
+    top: 210px;
+  }
+  .header__log {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social {
+    display: none;
+  }
+  .socialMedia {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    margin-bottom: 23.5px;
+  }
+  .socialPhone {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .socialPhone a {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .school__desc {
+    font-size: 2.4rem;
+    margin-bottom: 4px;
+  }
+  .school__name {
+    font-size: 4.8rem;
+    margin-bottom: 15px;
+  }
+  .school__link {
+    font-size: 1.6rem;
+    max-width: 140px;
+    height: 40px;
+  }
+  .winners__row {
+    row-gap: 16px;
+    flex-direction: column;
+    margin-bottom: 23.5px;
+  }
+  .winners__win, .winners__baby, .winners__hals {
+    font-size: 1.6rem;
+  }
+  .schedule__body::after {
+    display: none;
+  }
+  .price::after {
+    display: none;
+  }
+  .block__fone {
+    background: url(./../images/fone-chore.png);
+    background-repeat: no-repeat;
+    min-height: 768px;
+  }
+  .directions {
+    margin-bottom: 40px;
+    margin-top: 2.4rem;
+  }
+  .directions__body__title {
+    font-size: 2.4rem;
+    line-height: 133.333%;
+  }
+  .directions__body__title::after {
+    max-width: 218px;
+  }
+  .directions__col__name {
+    font-size: 2.4rem;
+    line-height: 133.333%;
+  }
+  .directions__col__video__link {
+    font-size: 1.6rem;
+    -ms-scroll-limit-x-max: 100%;
+  }
+  .directions__col__row {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    max-width: 100%;
+    column-gap: 56px;
+  }
+  .directions__col__top2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .directions__col__bottom {
+    margin-top: 81px;
+    margin-bottom: 0px;
+  }
+  .directions__col__bottom2 {
+    margin-top: 76px;
+    margin-bottom: 0px;
+  }
+  .choreographers__col {
+    flex: 1 0 100%;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
