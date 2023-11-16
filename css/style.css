@@ -34,7 +34,7 @@
   max-width: 410px;
   width: 100%;
   height: 3px;
-  background: #B661EA;
+  background: #b661ea;
 }
 
 .hover {
@@ -59,8 +59,8 @@
   z-index: 1;
   position: relative;
   padding-bottom: 146px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#B661EA), to(rgba(47, 47, 47, 0)));
-  background: linear-gradient(180deg, #B661EA 0%, rgba(47, 47, 47, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b661ea), to(rgba(47, 47, 47, 0)));
+  background: linear-gradient(180deg, #b661ea 0%, rgba(47, 47, 47, 0) 100%);
   height: 361px;
 }
 .header__row {
@@ -281,7 +281,7 @@
   max-width: 410px;
   width: 100%;
   height: 3px;
-  background: #B661EA;
+  background: #b661ea;
 }
 .directions__row {
   display: -webkit-box;
@@ -491,7 +491,7 @@
   max-width: 410px;
   width: 100%;
   height: 3px;
-  background: #B661EA;
+  background: #b661ea;
 }
 
 table.iksweb {
@@ -500,11 +500,15 @@ table.iksweb {
   height: auto;
 }
 
+.iksweb__hall h2 {
+  color: #FAF3FF;
+}
+
 table.iksweb,
 table.iksweb td,
 table.iksweb th {
-  border-top: 0px solid #B661EA;
-  border-left: 0px solid #B661EA;
+  border-top: 0px solid #b661ea;
+  border-left: 0px solid #b661ea;
   border-collapse: collapse;
 }
 
@@ -527,13 +531,20 @@ table.iksweb th {
 td {
   border: 1px solid;
 }
+td h2 {
+  color: #FAF3FF;
+}
+
+table.iksweb td, table.iksweb th {
+  color: #FAF3FF;
+}
 
 td:nth-child(7n) {
-  border-right: 0px solid #B661EA;
+  border-right: 0px solid #b661ea;
 }
 
 .none td {
-  border-bottom: 0px solid #B661EA;
+  border-bottom: 0px solid #b661ea;
 }
 
 .box .box__time {
@@ -805,7 +816,7 @@ table .iksweb__day, table .iksweb__clock {
   line-height: 40px;
 }
 .price__block2__item__price {
-  color: #FAF3FF, #FAF3FF;
+  color: #FAF3FF, #faf3ff;
   font-size: 2.4rem;
   font-family: "Montserrat";
   font-style: normal;
@@ -1055,7 +1066,7 @@ table .iksweb__day, table .iksweb__clock {
 
 .footer {
   margin-top: 5.6rem;
-  background: var(--gradient-color-gradient-violet-futer, linear-gradient(to top, #B661EA 0%, rgba(47, 47, 47, 0) 85.41%));
+  background: var(--gradient-color-gradient-violet-futer, linear-gradient(to top, #b661ea 0%, rgba(47, 47, 47, 0) 85.41%));
 }
 .footer__container {
   max-width: 133.3rem;
