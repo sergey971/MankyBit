@@ -11,10 +11,6 @@
   .price::after {
     left: 0px;
   }
-  .price__btn {
-    top: -93px;
-    left: -14px;
-  }
 }
 @media (max-width: 768px) {
   .nav {
@@ -32,6 +28,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .social {
     left: 1%;
@@ -209,9 +207,14 @@
   .directions__body__title::after {
     max-width: 218px;
   }
+  .directions__row {
+    max-width: 294px;
+    width: 100%;
+  }
   .directions__col__name {
     font-size: 2.4rem;
     line-height: 133.333%;
+    min-width: 150px;
   }
   .directions__col__video__link {
     font-size: 1.6rem;
@@ -229,9 +232,14 @@
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 100%;
-    -webkit-column-gap: 56px;
-       -moz-column-gap: 56px;
-            column-gap: 56px;
+    -webkit-column-gap: 39px;
+       -moz-column-gap: 39px;
+            column-gap: 39px;
+  }
+  .directions__title {
+    max-width: 305px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .directions__col__top2 {
     margin-top: 0px;
@@ -245,10 +253,14 @@
     margin-top: 76px;
     margin-bottom: 0px;
   }
+  .directions__body__title {
+    margin-bottom: 25px;
+  }
   .choreographers__col {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
+    max-width: 305px;
   }
   .choreographers__name, .choreographers__col__dance {
     font-size: 2.4rem;
@@ -345,6 +357,12 @@
   .price__block2__body {
     max-width: 305px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .price__block2__row {
     -webkit-box-orient: horizontal;
@@ -355,6 +373,9 @@
         -ms-flex-align: baseline;
             align-items: baseline;
   }
+  .price__block2__item__desc {
+    white-space: nowrap;
+  }
   .price__block2__colm, .price__block2__colm2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -364,10 +385,14 @@
   }
   .price__block2__colm {
     row-gap: 32px;
-    width: 175%;
+    width: 134%;
   }
   .price__block2__colm2 {
     row-gap: 48px;
+    border-radius: 10px;
+    background: var(--colorDecorWhite10, rgba(255, 255, 255, 0.1));
+    height: auto;
+    padding: 15px 14px;
   }
   .price__block2__item__price {
     font-size: 2rem;
@@ -375,5 +400,21 @@
   }
   .price__block2__item__price--200, .price__block2__item__price--400, .price__block2__item__price--1600, .price__block2__item__price--2600 {
     padding-left: initial;
+  }
+  .price__block2__quest {
+    display: none;
+  }
+  .price__btn {
+    max-width: 140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 68px;
+  }
+  .price__btn a {
+    font-size: 1.6rem;
+  }
+  .price__btn a::after {
+    content: none;
   }
 }
