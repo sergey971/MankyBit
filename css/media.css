@@ -472,7 +472,14 @@
   .map__quest {
     margin-bottom: 63px;
   }
-  .map .gis2 #map_690453897 {
+  .map .gis2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .map .gis2 #map_364225991 {
     max-width: 303px;
     width: 100%;
     height: 183px;
@@ -480,7 +487,7 @@
     margin-left: 0px;
   }
   .map .gis2 .mapIframe {
-    margin-left: 10px; /* Или другое значение, которое вам подходит */
+    margin-left: 10px;
   }
   .map .gis2__title {
     position: relative;
@@ -516,5 +523,11 @@
     font-size: 2rem;
     font-weight: 400;
     line-height: 120%;
+  }
+  .footer .nav {
+    display: none;
+  }
+  .footer__phohe {
+    display: none;
   }
 }
