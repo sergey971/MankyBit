@@ -31,6 +31,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .directions__title__box {
+    max-width: 305px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .social {
     left: 1%;
   }
@@ -89,6 +95,9 @@
   }
   .win__Russia h3, .win__respublic h3 {
     font-size: 3.5rem;
+  }
+  .win__title {
+    margin-top: 24px;
   }
   .win__respublic h3 {
     margin-bottom: 40px;
