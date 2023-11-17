@@ -417,4 +417,104 @@
   .price__btn a::after {
     content: none;
   }
+  .win {
+    background-image: url("../images/fone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .win__title {
+    margin-bottom: 32px;
+  }
+  .win__title h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 133.333%;
+  }
+  .win__Russia {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .win__Russia h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .win__desc {
+    margin-bottom: 37px;
+  }
+  .win__desc ul li {
+    color: #FAF3FF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 11px;
+  }
+  .win__desc ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .win__respublic h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .win__respublic ul li {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 11px;
+  }
+  .win__respublic ul li:last-child {
+    margin-bottom: 0px;
+  }
+  .map__quest {
+    margin-bottom: 63px;
+  }
+  .map .gis2 #map_690453897 {
+    max-width: 303px;
+    width: 100%;
+    height: 183px;
+    border-radius: 10px;
+    margin-left: 0px;
+  }
+  .map .gis2 .mapIframe {
+    margin-left: 10px; /* Или другое значение, которое вам подходит */
+  }
+  .map .gis2__title {
+    position: relative;
+  }
+  .map .gis2__title::after {
+    position: absolute;
+    top: -12px;
+    right: -38px;
+    content: "";
+    width: 24px;
+    height: 39px;
+    background: url(./../images/LocationMedia.svg);
+    background-repeat: no-repeat;
+  }
+  .map .gis2__title h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 133.333%;
+  }
+  .map .gis2__img {
+    display: none !important;
+  }
+  .map__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map__quest__title, .map__quest__text {
+    max-width: 304px;
+  }
+  .map__quest__title h3, .map__quest__text h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
