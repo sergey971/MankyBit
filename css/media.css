@@ -93,6 +93,12 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .map__gis2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .win__Russia h3, .win__respublic h3 {
     font-size: 3.5rem;
   }
