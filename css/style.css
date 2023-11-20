@@ -519,7 +519,7 @@ table.iksweb th :hover {
 table.iksweb td,
 table.iksweb th {
   padding: 3px;
-  width: 184px;
+  max-width: 184px;
   height: 200px;
   color: #B661EA;
 }
@@ -532,10 +532,6 @@ td {
   border: 1px solid;
 }
 td h2 {
-  color: #FAF3FF;
-}
-
-table.iksweb td, table.iksweb th {
   color: #FAF3FF;
 }
 
@@ -554,6 +550,10 @@ td:nth-child(7n) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+
+.iksweb__clock h2 {
+  color: #FAF3FF;
 }
 
 .box__body__desc__style {
