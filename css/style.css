@@ -97,6 +97,9 @@
 .header .nav__link:last-child {
   margin-right: 0;
 }
+.header .nav__link:hover {
+  color: #121212;
+}
 .header__phohe a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 2rem;
@@ -132,6 +135,8 @@
 }
 .social a {
   color: #FAF3FF;
+  position: relative;
+  z-index: 1;
 }
 .social a:hover {
   color: #B661EA;
@@ -553,7 +558,7 @@ td:nth-child(7n) {
 }
 
 .iksweb__clock h2 {
-  color: #FAF3FF;
+  color: #faf3ff;
 }
 
 .box__body__desc__style {
@@ -1112,6 +1117,9 @@ table .iksweb__day, table .iksweb__clock {
 }
 .footer .nav__link:last-child {
   margin-right: 0;
+}
+.footer .nav__link:hover {
+  color: #121212;
 }
 .footer__phohe a {
   color: rgba(255, 255, 255, 0.6);
