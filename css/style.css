@@ -669,7 +669,7 @@ table .iksweb__day, table .iksweb__clock {
   content: "";
   position: absolute;
   top: -173px;
-  left: 176px;
+  left: 109px;
   background: url(../images/DecorCircle.png);
   background-repeat: no-repeat;
   width: 453px;
@@ -894,6 +894,9 @@ table .iksweb__day, table .iksweb__clock {
 
 .win {
   margin-bottom: 113px;
+  background: url("../images/win/win.jpg"), lightgray 0px -46.824px/100% 124.157% no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 .win__row {
   display: -webkit-box;
@@ -1126,4 +1129,52 @@ table .iksweb__day, table .iksweb__clock {
   font-size: 2rem;
   font-family: "Montserrat";
   line-height: 24px;
+}
+
+.schedulee {
+  position: relative;
+}
+
+.schedulee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #B661EA;
+  background-color: rgba(182, 97, 234, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+
+.schedulee:hover::before {
+  opacity: 1;
+}
+
+.box {
+  position: relative;
+}
+.box .more {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  z-index: 1;
+  color: #FAF3FF;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.box .more:hover {
+  display: block;
+}
+.box:hover .more {
+  display: block;
 }

@@ -587,6 +587,21 @@
   .box__body__desc__type {
     display: none;
   }
+  .schedulee {
+    position: relative;
+  }
+  .schedulee::before {
+    opacity: 0;
+  }
+  .box {
+    position: relative;
+  }
+  .box .more {
+    display: none;
+  }
+  .box:hover .more {
+    display: block;
+  }
 }
 @media (max-width: 374px) {
   .school__name {
