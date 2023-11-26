@@ -25,8 +25,8 @@
   z-index: 1;
   position: relative;
   padding-bottom: 146px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#B661EA), to(rgba(47, 47, 47, 0)));
-  background: linear-gradient(180deg, #B661EA 0%, rgba(47, 47, 47, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#b661ea), to(rgba(47, 47, 47, 0)));
+  background: linear-gradient(180deg, #b661ea 0%, rgba(47, 47, 47, 0) 100%);
   height: 361px;
 }
 .header__row {
@@ -140,7 +140,7 @@
   max-width: 410px;
   width: 100%;
   height: 3px;
-  background: #B661EA;
+  background: #b661ea;
 }
 .history__manky__col__left img {
   border-radius: 10px;
@@ -214,6 +214,13 @@
   width: 100%;
   z-index: -1;
 }
+.moments__photo__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .moments__title {
   margin-bottom: 80px;
 }
@@ -227,6 +234,7 @@
 .moments__photo__img__block img {
   position: relative;
   z-index: 2;
+  border-radius: 10px;
 }
 .moments__photo__img__block::after {
   content: "";
@@ -241,44 +249,11 @@
   z-index: 1;
   border-radius: 10px;
 }
-.moments__photo__img1, .moments__photo__img3 {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 419px;
-     -moz-column-gap: 419px;
-          column-gap: 419px;
-  margin-bottom: 79px;
-  border-radius: 10px;
-}
-.moments__photo__img5 {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 419px;
-     -moz-column-gap: 419px;
-          column-gap: 419px;
-}
-.moments__photo__img2, .moments__photo__img4 {
-  z-index: 2;
-  margin-bottom: 79px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.moments__photo__img__block img {
-  border-radius: 10px;
-}
 
 .win {
   padding-top: 38px;
   margin-bottom: 113px;
-  background-image: url("../images/about/bg_about.png");
+  background-image: url("../images/win/win.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -460,7 +435,7 @@
 
 .footer {
   margin-top: 5.6rem;
-  background: var(--gradient-color-gradient-violet-futer, linear-gradient(to top, #B661EA 0%, rgba(47, 47, 47, 0) 85.41%));
+  background: var(--gradient-color-gradient-violet-futer, linear-gradient(to top, #b661ea 0%, rgba(47, 47, 47, 0) 85.41%));
 }
 .footer__container {
   max-width: 133.3rem;
