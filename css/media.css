@@ -638,6 +638,9 @@
   .moments {
     background: none;
   }
+  .moments::before {
+    content: none;
+  }
   .moments .title--left {
     font-size: 2.4rem;
     font-weight: 400;
@@ -665,8 +668,11 @@
     margin-left: 16px;
   }
   .moments__photo__img__block {
-    width: 78%;
+    width: 73%;
     margin-bottom: 11px;
+  }
+  .moments__photo__img__block:nth-child(2n+1) {
+    margin-right: auto;
   }
   .moments__photo__img__block:nth-child(2n) {
     margin-left: auto;
