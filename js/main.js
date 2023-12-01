@@ -4,7 +4,9 @@ const directionsColVideo = document.querySelectorAll('.directions__col__video__l
 const directionsColName = document.querySelectorAll('.directions__col__name');
 const tableNone = document.querySelectorAll('.tableNone');
 const showTable = document.getElementById('showTable');
-console.log(tableNone);
+const burger = document.querySelector('#burger');
+const menu = document.querySelector('.nav');
+const fone = document.querySelector('#fone');
 function danceHover() {
     for (let i = 0; i < directionsColVideo.length; i++) {
         directionsColVideo[i].addEventListener('mouseover', function () {
@@ -49,24 +51,12 @@ function showTableHomePage() {
 }
 showTableHomePage()
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+// бургер
+function showburgerMenu() {
+    burger.addEventListener("click", function () {
+        menu.classList.toggle('show');
+        fone.classList.toggle('show');
+    });
+
+}
+showburgerMenu();
