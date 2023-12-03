@@ -1093,7 +1093,7 @@ table .iksweb__day, table .iksweb__clock {
 .footer__container {
   max-width: 133.3rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0px 15px;
 }
 .footer__row {
   display: -webkit-box;
@@ -1111,12 +1111,6 @@ table .iksweb__day, table .iksweb__clock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.footer__container {
-  max-width: 133.3rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  margin-bottom: 16px;
 }
 .footer .nav__link {
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);

@@ -640,6 +640,7 @@
     display: none;
   }
   .moments {
+    margin-bottom: 40px;
     background: none;
   }
   .moments::before {
@@ -757,6 +758,12 @@
   }
   .close {
     margin-left: 350px;
+  }
+  .win {
+    height: auto;
+  }
+  .btnForm {
+    margin-bottom: 63px;
   }
 }
 @media (max-width: 374px) {
