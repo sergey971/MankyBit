@@ -7,6 +7,7 @@ const showTable = document.getElementById('showTable');
 const burger = document.querySelector('#burger');
 const menu = document.querySelector('.nav');
 const fone = document.querySelector('.fone');
+const fone2 = document.querySelector('.fone2');
 const header = document.querySelector('.header');
 
 function danceHover() {
@@ -58,6 +59,7 @@ function showburgerMenu() {
     burger.addEventListener("click", function () {
         menu.classList.toggle('show');
         fone.classList.toggle('show');
+        fone2.classList.toggle('show');
     });
 
 }
