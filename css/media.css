@@ -741,6 +741,7 @@
     display: -ms-flexbox;
     display: flex;
     margin-left: 0px;
+    height: 100vh;
   }
   .close {
     margin-left: 350px;
