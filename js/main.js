@@ -6,7 +6,7 @@ const tableNone = document.querySelectorAll('.tableNone');
 const showTable = document.getElementById('showTable');
 const burger = document.querySelector('#burger');
 const menu = document.querySelector('.nav');
-const fone = document.querySelector('#fone');
+const fone = document.querySelector('.fone');
 function danceHover() {
     for (let i = 0; i < directionsColVideo.length; i++) {
         directionsColVideo[i].addEventListener('mouseover', function () {
