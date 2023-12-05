@@ -294,7 +294,7 @@
   }
   .price__body {
     border-radius: 10px;
-    background: linear-gradient(164deg, #B661EA 0%, #000 100%);
+    background: linear-gradient(164deg, #b661ea 0%, #000 100%);
     max-width: 305px;
     width: 100%;
     display: block;
@@ -463,7 +463,7 @@
     margin-bottom: 37px;
   }
   .win__desc ul li {
-    color: #FAF3FF;
+    color: #faf3ff;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
@@ -662,6 +662,26 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .moments__desc__photo {
+    max-width: 206px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    padding: 7px 17px;
+    position: relative;
+    top: -14px;
+    margin-left: auto;
+    right: 0;
+    z-index: 2;
+    background: #121212;
+  }
+  .moments__desc__photo p {
+    color: #faf3ff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 100%;
   }
   .moments__photo__img {
     display: -webkit-box;
