@@ -1,4 +1,2 @@
-/правки.txt
-/prepros.config
-.idea/
-*.scss
+prepros.config
+.idea
