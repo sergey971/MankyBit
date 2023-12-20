@@ -1,0 +1,28 @@
+.speeches__btn {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: $Button-colorButtonprimaryNormal;
+  box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.5);
+
+  color: $colorDecorBlack;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.speeches__aboutSch__btn {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: $Button-colorButtonprimaryNormal;
+  box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.5);
+  color: $colorDecorBlack;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+}
