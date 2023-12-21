@@ -2,15 +2,14 @@
   &__container {
     max-width: 1291px;
     margin: 0 auto;
-    // mix-blend-mode: darken;
   }
   &__body {
-    background: url("../../images/fone4.jpg"), lightgray 50% / cover no-repeat;
+    background: url("../../images/fone4.jpg"), lightblue 0% / cover no-repeat;
     position: relative;
     z-index: 1;
+    border-radius: 10px;
   }
   &__row {
-    border-radius: 10px;
     background: $colorFoneGrafit;
     display: flex;
     column-gap: 85px;
@@ -22,10 +21,7 @@
   }
   &__slider {
     
-    .swiper {
-      width: 600px;
-      height: 300px;
-    }
+
   }
 
   
