@@ -1,4 +1,5 @@
 .chore {
+  padding: 10px;
   &__container {
     max-width: 1291px;
     margin: 0 auto;
@@ -7,7 +8,7 @@
     background: url("../../images/fone4.jpg"), lightblue 0% / cover no-repeat;
     position: relative;
     z-index: 1;
-    border-radius: 10px;
+    padding: 96px 80px auto 55px;
   }
   &__row {
     background: $colorFoneGrafit;
@@ -18,13 +19,17 @@
   &__content {
     position: relative;
     z-index: 2;
+    margin-right: auto;
+    margin-top: 65px;
   }
   &__slider {
-    
+    margin-left: auto;
+    margin-top: 65px;
+    margin-bottom: auto;
+    margin-right: auto;
 
   }
 
-  
   &__desc__row {
     display: flex;
     flex-direction: column;
@@ -83,4 +88,35 @@
       z-index: -1;
     }
   }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+
+}
+.modal-open {
+  display: block;
+}
+.modal__content {
+  margin: 0px auto;
+  // padding: 20px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

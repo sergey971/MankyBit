@@ -12,6 +12,9 @@
 .fone2 {
   display: none;
 }
+body.modal-open {
+  overflow: hidden;
+}
 // =================================================================
 .wrapper {
   position: relative;

@@ -3,6 +3,7 @@ const config = {
 	entry: {
 		index: './src/js/index.js',
 		main: './src/js/main.js',
+		video: './src/js/video.js',
 		// contacts: './src/js/contacts.js',
 		// about: './src/js/about.js',
 	},

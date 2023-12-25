@@ -92,65 +92,73 @@ const swiper = new Swiper(".swiper", {
     //   el: '.swiper-scrollbar',
   },
 });
-// Воспроизведение видео в слайдере
-function findVideos() {
-  let videos = document.querySelectorAll(".video");
 
-  for (let i = 0; i < videos.length; i++) {
-    setupVideo(videos[i]);
-  }
-}
-
-function setupVideo(video) {
-  let link = video.querySelector(".video__link");
-  let media = video.querySelector(".video__media");
-  let button = video.querySelector(".video__button");
-  let id = parseMediaURL(media);
-
-  video.addEventListener("click", () => {
-    let iframe = createIframe(id);
-
-    link.remove();
-    button.remove();
-    video.appendChild(iframe);
-  });
-
-  link.removeAttribute("href");
-  video.classList.add("video--enabled");
-}
-
-function parseMediaURL(media) {
-  let regexp =
-    /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-  let url = media.src;
-  let match = url.match(regexp);
-
-  return match[1];
-}
-
-function createIframe(id) {
-  let iframe = document.createElement("iframe");
-
-  iframe.setAttribute("allowfullscreen", "");
-  iframe.setAttribute("allow", "autoplay");
-  iframe.setAttribute("src", generateURL(id));
-  iframe.classList.add("video__media");
-  // Устанавливаем ширину и высоту iframe
-  iframe.style.width = "100%";
-  iframe.style.height = "430px";
-  return iframe;
-}
-
-function generateURL(id) {
-  let query = "?rel=0&showinfo=0&autoplay=1";
-
-  return "https://www.youtube.com/embed/" + id + query;
-}
-
-findVideos();
 // ====
-const btnChor = document.querySelectorAll(".choreographers__col__area__btn");
-for (let i = 0; i < btnChor.length; i++) {
-  const element = btnChor[i];
-  console.log(element);
+const btnChors = document.querySelectorAll(".choreographers__col__area__btn");
+for (let i = 0; i < btnChors.length; i++) {
+  const btnChor = btnChors[i];
+  
 }
+
+  // =============
+  // function openModal(dialogId) {
+  //   const myDialog = document.getElementById(dialogId);
+  //   myDialog.showModal();
+  //   document.body.classList.add('modal-open');
+  // }
+  
+  // function closeModal(dialogId) {
+  //   const myDialog = document.getElementById(dialogId);
+  //   myDialog.close();
+  //   document.body.classList.remove('modal-open');
+  // }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // это то модальное окно, с которым и будем работать
+    const modal = document.querySelector("#myModal");
+    // назначаем обработчик события для клика по кнопке открытия окна
+    document.querySelector("#myBtn").addEventListener("click", openModal);
+    /*
+     * Обработчик события клика по кнопке открытия модального окна
+     */
+    function openModal() {
+      modal.classList.add("modal-open");
+      // обработчики событий, которые работают, когда окно открыто
+      attachModalEvents();
+    }
+    function attachModalEvents() {
+      // закрывать модальное окно при нажатии на крестик
+      modal.querySelector(".close").addEventListener("click", closeModal);
+      // закрывать модальное окно при нажатии клавиши Escape
+      document.addEventListener("keydown", handleEscape);
+      // закрывать модальное окно при клике вне контента модального окна
+      document.addEventListener("click", handleOutside);
+    }
+    function closeModal() {
+      modal.classList.remove(".modal-open");
+      // окно закрыто, эти обработчики событий больше не нужны
+      detachModalEvents();
+    }
+    function detachModalEvents() {
+      modal.querySelector(".close").removeEventListener(".click", closeModal);
+      document.removeEventListener("keydown", handleEscape);
+      modal.removeEventListener("click", handleOutside);
+    }
+    /*
+     * Функция закрывает модальное окно при нажатии клавиши Escape
+     */
+    function handleEscape(event) {
+      if (event.key === "escape") {
+        closeModal();
+      }
+    }
+    /*
+     * Функция закрывает модальное окно при клике вне контента модального окна
+     */
+    function handleOutside(){
+      const isClickInside = !!event.target.closest('.modal__content');
+      if(!isClickInside){
+          closeModal();
+      }
+    }
+  });
