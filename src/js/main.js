@@ -103,50 +103,56 @@ for (let i = 0; i < btnChors.length; i++) {
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
-    modal.style.display = 'none';
+    modal.classList.remove("modal-open");
   }
 }
-
+// не работает закрытие
 document.querySelectorAll('button[data-modal]').forEach(function(button) {
   button.addEventListener('click', function() {
     const modalId = this.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
     if (modal) {
-      modal.style.display = 'block';  
+      modal.classList.add("modal-open"); 
     }
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.querySelector("#myModal");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const modal = document.querySelector("#myModal");
   // const myBtn = document.querySelector("#myBtn");
-  const closeBtn = document.querySelector(".close");
+  const closeBtns = document.querySelectorAll(".close");
 
-  // myBtn.addEventListener("click", openModal);
+  closeBtns.forEach(function(btn){
+    btn.addEventListener("click",function() {
+       modal.classList.remove("modal-open");
+    });
+  });
 
-  function openModal() {
-    modal.classList.add("modal-open");
-    attachModalEvents();
-  }
+//   // myBtn.addEventListener("click", openModal);
 
-  function closeModal() {
-    modal.classList.remove("modal-open");
+//   // function openModal() {
+//   //   modal.classList.add("modal-open");
+//   //   attachModalEvents();
+//   // }
+
+  // function closeModal() {
+  //   modal.classList.remove("modal-open");
     // окно закрыто, эти обработчики событий больше не нужны
-    detachModalEvents();
-  }
+    // detachModalEvents();
+  // }
 
-  function attachModalEvents() {
-    closeBtn.addEventListener("click", closeModal);
-    document.addEventListener("keydown", handleEscape);
-  }
+//   function attachModalEvents() {
+//     closeBtn.addEventListener("click", closeModal);
+//     document.addEventListener("keydown", handleEscape);
+//   }
 
-  function detachModalEvents() {
-    // удалить обработчик событий при закрытии модального окна
-    closeBtn.removeEventListener("click", closeModal);
-    document.removeEventListener("keydown", handleEscape);
-  }
-  function handleEscape(event) {
-    if (event.key === "Escape" || event.keyCode === 27) {
-      closeModal();
-    }
-  }
-});
+//   function detachModalEvents() {
+//     // удалить обработчик событий при закрытии модального окна
+//     closeBtn.removeEventListener("click", closeModal);
+//     document.removeEventListener("keydown", handleEscape);
+//   }
+//   function handleEscape(event) {
+//     if (event.key === "Escape" || event.keyCode === 27) {
+//       closeModal();
+//     }
+//   }
+// });

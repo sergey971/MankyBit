@@ -24,3 +24,12 @@ gulp.task(
 		gulp.parallel('server:docs')
 	)
 );
+  var deploy = require('gulp-gh-pages');
+
+  gulp.task('deploy', function () {
+    return gulp.src("./build/**/*")
+      .pipe(deploy({ 
+        remoteUrl: "https://github.com/sergey971/MankyBit.git",
+        branch: "main"
+      }))
+  });
