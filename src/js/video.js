@@ -1,4 +1,3 @@
-console.log(111111111111);
 // Воспроизведение видео в слайдере
 function findVideos() {
     let videos = document.querySelectorAll(".video");

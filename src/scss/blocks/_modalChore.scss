@@ -9,6 +9,7 @@
     position: relative;
     z-index: 1;
     padding: 96px 80px auto 55px;
+
   }
   &__row {
     background: $colorFoneGrafit;
@@ -87,6 +88,13 @@
       filter: blur(50px);
       z-index: -1;
     }
+  }
+  &__cross{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    z-index: 2;
+    cursor: pointer;
   }
 }
 .modal {
