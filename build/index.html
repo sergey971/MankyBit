@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
-    <!-- Add these lines to your HTML file -->
-
-
     <title>Monkey Beat</title>
 
     
@@ -154,49 +151,62 @@
                                 <div class="directions__col__row">
                                     <div class="directions__col__top">
                                         <div class="directions__col__name">Jazz Funk</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                               data-modal = "ModalJazzFunk">
+                                               посмотреть видео</button>
+                                            </div>
                                     </div>
                                     <div class="directions__col__bottom">
-                                        <div class="directions__col__name">Hip - Hop</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__name">Lady Dance</div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                            data-modal = "Lady">
+                                            посмотреть видео</button>
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
                                     <div class="directions__col__top2">
-                                        <div class="directions__col__name">Vogue</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__name">Hip - Hop</div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                            data-modal = "HipHop">
+                                            посмотреть видео</button>
+                                            </div>
                                     </div>
                                     <div class="directions__col__bottom2">
-                                        <div class="directions__col__name">High - Heels</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__name">Strip</div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Strip">
+                                            посмотреть видео</button></div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
                                     <div class="directions__col__top">
                                         <div class="directions__col__name">Strip</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Strip">
+                                            посмотреть видео</button></div>
                                     </div>
                                     <div class="directions__col__bottom">
-                                        <div class="directions__col__name">Afro choreo</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
+                                        <div class="directions__col__name">Vogue</div>
+                                        <div class="directions__col__video"><a data-modal = "Vogue" class="directions__col__video__link"
                                                 href="#">посмотреть видео</a></div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
                                     <div class="directions__col__top2">
                                         <div class="directions__col__name">Afro choreo</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Afro">
+                                            посмотреть видео</button></div>
                                     </div>
                                     <div class="directions__col__bottom2">
                                         <div class="directions__col__name">K - Pop</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Pop">
+                                            посмотреть видео</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +233,7 @@
                                         <span
                                         
                                             class="choreographers__col__area">
-                                        <button onclick="closeModal('Modal1')" class="choreographers__col__area__btn" id="myBtn" data-modal = "Modal1">
+                                        <button class="choreographers__col__area__btn" data-modal = "Modal1">
                                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                 <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
@@ -244,8 +254,8 @@
                                     <div class="choreographers__col__item">
                                         <div class="choreographers__col__name">Гусев Алексей</div><span
                                             class="choreographers__col__area">
-                                            <button  class="choreographers__col__area__btn" data-modal = "Modal2" onclick="closeModal('Modal2')">
-                                                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <button  class="choreographers__col__area__btn" data-modal = "Modal2">
+                                                <svg class="fill" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                     <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
                                                     </svg>
@@ -286,7 +296,7 @@
                                     <div class="choreographers__col__item">
                                         <div class="choreographers__col__name">Амиров Марат</div><span
                                             class="choreographers__col__area">
-                                            <button class="choreographers__col__area__btn" data-modal = "Modal14>
+                                            <button class="choreographers__col__area__btn" data-modal = "Modal4">
                                                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                     <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
@@ -307,7 +317,7 @@
                                     <div class="choreographers__col__item">
                                         <div class="choreographers__col__name">Видинеева Анна</div><span
                                             class="choreographers__col__area">
-                                            <button class="choreographers__col__area__btn" data-modal = "Modal15>
+                                            <button class="choreographers__col__area__btn" data-modal = "Modal5">
                                                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                     <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
@@ -1055,13 +1065,17 @@
        
     </div>
     <div id="Modal1" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal1')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -1230,7 +1244,7 @@
             <div class="chore__content">
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим11111111111111</h3></div>
+                  <div class="chore__name"><h3>Зимин Максим</h3></div>
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
@@ -1278,7 +1292,12 @@
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal2')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -1447,7 +1466,7 @@
             <div class="chore__content">
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим222222222222222</h3></div>
+                  <div class="chore__name"><h3>Зимин Максим</h3></div>
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
@@ -1490,13 +1509,17 @@
   </div>
 </div>
 <div id="Modal3" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal3')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -1708,13 +1731,17 @@
   </div>
 </div>
 <div id="Modal4" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal4')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -1926,13 +1953,17 @@
   </div>
 </div>
 <div id="Modal5" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal5')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -2144,13 +2175,17 @@
   </div>
 </div>
 <div id="Modal6" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal6')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -2362,13 +2397,17 @@
   </div>
 </div>
 <div id="Modal7" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal7')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -2579,14 +2618,18 @@
     </section>
   </div>
 </div>
-<div id="8" class="modal">
-  
+<div id="Modal8" class="modal">
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal8')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -2798,13 +2841,17 @@
   </div>
 </div>
 <div id="Modal9" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal9')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -3016,13 +3063,17 @@
   </div>
 </div>
 <div id="Modal10" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal10')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -3234,13 +3285,17 @@
   </div>
 </div>
 <div id="Modal11" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal11')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -3452,13 +3507,17 @@
   </div>
 </div>
 <div id="Modal12" class="modal">
-  
   <div class="modal__content">
     <section class="chore">
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
-            <img class="close" src="../../images/Cross2.png" alt="крестик">
+            <img
+              class="close"
+              onclick="closeModal('Modal12')"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
           </div>
           <div class="chore__row">
             <div class="chore__slider"><div class="swiper">
@@ -3670,8 +3729,1123 @@
   </div>
 </div>
 
+<!-- Модальные окна танцев -->
+<div id="ModalJazzFunk" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+        <div class="chore__cross">
+            <img
+              class="close"
+              onclick="closeModal('ModalJazzFunk');"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
+          </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>Jazz Funk</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Lady" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+        <div class="chore__cross">
+            <img
+              class="close"
+              onclick="closeModal('Lady');"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
+          </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>Lady Dance</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="HipHop" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+        <div class="chore__cross">
+            <img
+              class="close"
+              onclick="closeModal('HipHop');"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
+          </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>Hip - Hop</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Strip" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+        <div class="chore__cross">
+            <img
+              class="close"
+              onclick="closeModal('Strip');"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
+          </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>Strip</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Vogue" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+        <div class="chore__cross">
+            <img
+              class="close"
+              onclick="closeModal('Vogue');"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
+          </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>Vogue</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Afro" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+        <div class="chore__cross">
+            <img
+              class="close"
+              onclick="closeModal('Afro');"
+              src="../../images/Cross2.png"
+              alt="крестик"
+            />
+          </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>Afro choreo</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ========================= -->
+<script>
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove("modal-open");
+      window.onscroll = function () { };
+    }
+    
+  }
+ 
+</script>
+
+    
+
 		<script src="./js/main.bundle.js"></script>
 		<script src="./js/video.bundle.js"></script>
+		<script src="./js/swiper.bundle.js"></script>
 
 </body>
 

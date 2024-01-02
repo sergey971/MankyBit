@@ -415,7 +415,7 @@ body.modal-open {
     overflow-y: scroll;
     height: 500px;
     scrollbar-width: none;
-
+    flex-wrap: wrap;
     &::-webkit-scrollbar {
       width: 0px;
     }

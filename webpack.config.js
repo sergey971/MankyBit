@@ -4,6 +4,7 @@ const config = {
 		index: './src/js/index.js',
 		main: './src/js/main.js',
 		video: './src/js/video.js',
+		swiper: './src/js/swiper.js',
 		// contacts: './src/js/contacts.js',
 		// about: './src/js/about.js',
 	},

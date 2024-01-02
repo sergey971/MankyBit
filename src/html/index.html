@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
-    <!-- Add these lines to your HTML file -->
-
-
     <title>Monkey Beat</title>
 
     
@@ -36,49 +33,62 @@
                                 <div class="directions__col__row">
                                     <div class="directions__col__top">
                                         <div class="directions__col__name">Jazz Funk</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                               data-modal = "ModalJazzFunk">
+                                               посмотреть видео</button>
+                                            </div>
                                     </div>
                                     <div class="directions__col__bottom">
-                                        <div class="directions__col__name">Hip - Hop</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__name">Lady Dance</div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                            data-modal = "Lady">
+                                            посмотреть видео</button>
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
                                     <div class="directions__col__top2">
-                                        <div class="directions__col__name">Vogue</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__name">Hip - Hop</div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                            data-modal = "HipHop">
+                                            посмотреть видео</button>
+                                            </div>
                                     </div>
                                     <div class="directions__col__bottom2">
-                                        <div class="directions__col__name">High - Heels</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__name">Strip</div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Strip">
+                                            посмотреть видео</button></div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
                                     <div class="directions__col__top">
                                         <div class="directions__col__name">Strip</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Strip">
+                                            посмотреть видео</button></div>
                                     </div>
                                     <div class="directions__col__bottom">
-                                        <div class="directions__col__name">Afro choreo</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
+                                        <div class="directions__col__name">Vogue</div>
+                                        <div class="directions__col__video"><a data-modal = "Vogue" class="directions__col__video__link"
                                                 href="#">посмотреть видео</a></div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
                                     <div class="directions__col__top2">
                                         <div class="directions__col__name">Afro choreo</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Afro">
+                                            посмотреть видео</button></div>
                                     </div>
                                     <div class="directions__col__bottom2">
                                         <div class="directions__col__name">K - Pop</div>
-                                        <div class="directions__col__video"><a class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video"><button class="directions__col__video__link"
+                                            data-modal = "Pop">
+                                            посмотреть видео</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +115,7 @@
                                         <span
                                         
                                             class="choreographers__col__area">
-                                        <button onclick="closeModal('Modal1')" class="choreographers__col__area__btn" id="myBtn" data-modal = "Modal1">
+                                        <button class="choreographers__col__area__btn" data-modal = "Modal1">
                                             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                 <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
@@ -126,8 +136,8 @@
                                     <div class="choreographers__col__item">
                                         <div class="choreographers__col__name">Гусев Алексей</div><span
                                             class="choreographers__col__area">
-                                            <button  class="choreographers__col__area__btn" data-modal = "Modal2" onclick="closeModal('Modal2')">
-                                                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <button  class="choreographers__col__area__btn" data-modal = "Modal2">
+                                                <svg class="fill" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                     <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
                                                     </svg>
@@ -168,7 +178,7 @@
                                     <div class="choreographers__col__item">
                                         <div class="choreographers__col__name">Амиров Марат</div><span
                                             class="choreographers__col__area">
-                                            <button class="choreographers__col__area__btn" data-modal = "Modal14>
+                                            <button class="choreographers__col__area__btn" data-modal = "Modal4">
                                                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                     <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
@@ -189,7 +199,7 @@
                                     <div class="choreographers__col__item">
                                         <div class="choreographers__col__name">Видинеева Анна</div><span
                                             class="choreographers__col__area">
-                                            <button class="choreographers__col__area__btn" data-modal = "Modal15>
+                                            <button class="choreographers__col__area__btn" data-modal = "Modal5">
                                                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="19.5" cy="19.5" r="19" stroke="#FCF3FF"/>
                                                     <path d="M30.7071 20.7071C31.0976 20.3166 31.0976 19.6834 30.7071 19.2929L24.3431 12.9289C23.9526 12.5384 23.3195 12.5384 22.9289 12.9289C22.5384 13.3195 22.5384 13.9526 22.9289 14.3431L28.5858 20L22.9289 25.6569C22.5384 26.0474 22.5384 26.6805 22.9289 27.0711C23.3195 27.4616 23.9526 27.4616 24.3431 27.0711L30.7071 20.7071ZM7 21H30V19H7V21Z"fill="#FCF3FF"/>
@@ -917,8 +927,10 @@
        
     </div>
     @@include('blocks/modalChore.html')
+    @@include('blocks/modalDance.html')
 		<script src="./js/main.bundle.js"></script>
 		<script src="./js/video.bundle.js"></script>
+		<script src="./js/swiper.bundle.js"></script>
 
 </body>
 

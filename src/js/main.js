@@ -66,87 +66,37 @@ function showburgerMenu() {
 }
 showburgerMenu();
 
-import Swiper from "swiper/bundle";
 
-// import styles bundle
-import "swiper/css/bundle";
 
-// init Swiper:
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: true,
-  spaceBetween: 15,
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    //   el: '.swiper-scrollbar',
-  },
-});
-
-// =======
+//================================================================
 const btnChors = document.querySelectorAll(".choreographers__col__area__btn");
 for (let i = 0; i < btnChors.length; i++) {
   const btnChor = btnChors[i];
 }
 
-// =============
-function closeModal(modalId) {
-  const modal = document.getElementById(modalId);
-  if (modal) {
-    modal.style.display = 'none';
-  }
-}
+//================================================================
 
+//================================================================
 document.querySelectorAll('button[data-modal]').forEach(function(button) {
   button.addEventListener('click', function() {
     const modalId = this.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
     if (modal) {
-      modal.style.display = 'block';  
+      modal.classList.add("modal-open");
+      scrollTop =
+      window.pageYOffset ||
+      document.documentElement.scrollTop;
+  scrollLeft =
+      window.pageXOffset ||
+      document.documentElement.scrollLeft,
+      window.onscroll = function () {
+          window.scrollTo(scrollLeft, scrollTop);
+      };
     }
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const modal = document.querySelector("#myModal");
-  // const myBtn = document.querySelector("#myBtn");
-  const closeBtn = document.querySelector(".close");
+// =================================================================
 
-  // myBtn.addEventListener("click", openModal);
-
-  function openModal() {
-    modal.classList.add("modal-open");
-    attachModalEvents();
-  }
-
-  function closeModal() {
-    modal.classList.remove("modal-open");
-    // окно закрыто, эти обработчики событий больше не нужны
-    detachModalEvents();
-  }
-
-  function attachModalEvents() {
-    closeBtn.addEventListener("click", closeModal);
-    document.addEventListener("keydown", handleEscape);
-  }
-
-  function detachModalEvents() {
-    // удалить обработчик событий при закрытии модального окна
-    closeBtn.removeEventListener("click", closeModal);
-    document.removeEventListener("keydown", handleEscape);
-  }
-  function handleEscape(event) {
-    if (event.key === "Escape" || event.keyCode === 27) {
-      closeModal();
-    }
-  }
-});
+function enableScroll() {
+  window.onscroll = function () { };
+}
