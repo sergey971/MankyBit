@@ -81,22 +81,18 @@ document.querySelectorAll('button[data-modal]').forEach(function(button) {
   button.addEventListener('click', function() {
     const modalId = this.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
+
     if (modal) {
       modal.classList.add("modal-open");
-      scrollTop =
-      window.pageYOffset ||
-      document.documentElement.scrollTop;
-  scrollLeft =
-      window.pageXOffset ||
-      document.documentElement.scrollLeft,
-      window.onscroll = function () {
-          window.scrollTo(scrollLeft, scrollTop);
-      };
+      document.querySelector('body').style.overflow = "hidden";
     }
+
   });
 });
+
 // =================================================================
 
-function enableScroll() {
-  window.onscroll = function () { };
-}
+// function enableScroll() {
+//   window.onscroll = function () { };
+
+// }

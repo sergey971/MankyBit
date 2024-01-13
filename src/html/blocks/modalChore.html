@@ -723,14 +723,14 @@
 <div id="ModalJazzFunk" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('ModalJazzFunk');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('ModalJazzFunk');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Jazz Funk</h3>
@@ -744,14 +744,14 @@
 <div id="Lady" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Lady');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Lady');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Lady Dance</h3>
@@ -765,14 +765,14 @@
 <div id="HipHop" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('HipHop');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('HipHop');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Hip - Hop</h3>
@@ -786,14 +786,14 @@
 <div id="Strip" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Strip');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Strip');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Strip</h3>
@@ -807,14 +807,14 @@
 <div id="Vogue" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Vogue');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Vogue');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Vogue</h3>
@@ -828,17 +828,38 @@
 <div id="Afro" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Afro');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Afro');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Afro choreo</h3>
+        </div>
+        <div class="chore__slider">@@include('./sliderDance.html')</div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Pop" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Pop');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>K - Pop</h3>
         </div>
         <div class="chore__slider">@@include('./sliderDance.html')</div>
         <button class="modalDance__btn">Хочу попробовать!</button>
@@ -852,9 +873,13 @@
     const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.remove("modal-open");
-      window.onscroll = function () { };
+      modal.addEventListener('click', (event)=>{
+        modal.classList.remove("modal-open");
+        document.querySelector('body').style.overflow = "visible";
+
+      });
+
     }
-    
+  
   }
- 
 </script>

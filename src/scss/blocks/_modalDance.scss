@@ -12,9 +12,11 @@
     align-items: center;
   &__container {
     max-width: 1231px;
-    margin: 0 auto;
     padding: 0 15px;
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &__row {
     display: flex;
@@ -49,9 +51,9 @@
   }
 }
 .modal-open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  // justify-content: center;
+  // align-items: center;
 }
 .close {
   color: #aaa;

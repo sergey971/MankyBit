@@ -187,12 +187,17 @@
                                         <div class="directions__col__name">Strip</div>
                                         <div class="directions__col__video"><button class="directions__col__video__link"
                                             data-modal = "Strip">
-                                            посмотреть видео</button></div>
+                                            посмотреть видео</button>
+                                        </div>
                                     </div>
                                     <div class="directions__col__bottom">
                                         <div class="directions__col__name">Vogue</div>
-                                        <div class="directions__col__video"><a data-modal = "Vogue" class="directions__col__video__link"
-                                                href="#">посмотреть видео</a></div>
+                                        <div class="directions__col__video">
+                                            <button class="directions__col__video__link"
+                                            data-modal = "Vogue">
+                                            посмотреть видео</button>
+                                            
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="directions__col__row">
@@ -3733,14 +3738,14 @@
 <div id="ModalJazzFunk" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('ModalJazzFunk');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('ModalJazzFunk');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Jazz Funk</h3>
@@ -3916,14 +3921,14 @@
 <div id="Lady" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Lady');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Lady');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Lady Dance</h3>
@@ -4099,14 +4104,14 @@
 <div id="HipHop" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('HipHop');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('HipHop');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Hip - Hop</h3>
@@ -4282,14 +4287,14 @@
 <div id="Strip" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Strip');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Strip');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Strip</h3>
@@ -4465,14 +4470,14 @@
 <div id="Vogue" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Vogue');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Vogue');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Vogue</h3>
@@ -4648,17 +4653,200 @@
 <div id="Afro" class="modalDance">
   <div class="modalDance__container">
     <div class="modalDance__body">
-        <div class="chore__cross">
-            <img
-              class="close"
-              onclick="closeModal('Afro');"
-              src="../../images/Cross2.png"
-              alt="крестик"
-            />
-          </div>
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Afro');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
       <div class="modalDance__row">
         <div class="modalDance__title">
           <h3>Afro choreo</h3>
+        </div>
+        <div class="chore__slider"><div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+            <picture>
+              <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+              <img
+                class="video__media"
+                src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+              <img
+                class="video__media overlay"
+                src="../../images/BGSliderDance.png"
+                alt="1. Пилот, разборы, ответы и лайвы"
+              />
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/nnrS20Nswdo">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/neHA4MJwpnY">
+              <picture>
+                  <source srcset="../../images/BGSliderDance.png" type="image/webp" />
+                  <img
+                    class="video__media"
+                    src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                  <img
+                    class="video__media overlay"
+                    src="../../images/BGSliderDance.png"
+                    alt="1. Пилот, разборы, ответы и лайвы"
+                  />
+                </picture>    
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg
+              width="71"
+              height="71"
+              viewBox="0 0 71 71"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="35.5"
+                fill="white"
+                fill-opacity="0.3"
+              />
+              <circle
+                cx="35.5"
+                cy="35.5"
+                r="34.5"
+                stroke="black"
+                stroke-opacity="0.7"
+                stroke-width="2"
+              />
+              <path
+                d="M52 35.5L27.25 49.7894L27.25 21.2106L52 35.5Z"
+                fill="black"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  </div>
+        <button class="modalDance__btn">Хочу попробовать!</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Pop" class="modalDance">
+  <div class="modalDance__container">
+    <div class="modalDance__body">
+      <div class="chore__cross">
+        <img
+          class="close"
+          onclick="closeModal('Pop');"
+          src="../../images/Cross2.png"
+          alt="крестик"
+        />
+      </div>
+      <div class="modalDance__row">
+        <div class="modalDance__title">
+          <h3>K - Pop</h3>
         </div>
         <div class="chore__slider"><div class="swiper">
     <!-- Additional required wrapper -->
@@ -4834,11 +5022,15 @@
     const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.remove("modal-open");
-      window.onscroll = function () { };
+      modal.addEventListener('click', (event)=>{
+        modal.classList.remove("modal-open");
+        document.querySelector('body').style.overflow = "visible";
+
+      });
+
     }
-    
+  
   }
- 
 </script>
 
     
