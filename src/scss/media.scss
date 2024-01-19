@@ -594,28 +594,22 @@
   .box .box__time {
     display: none;
   }
-  .box {
-    transform: rotate(90deg);
-  }
+
   .schedule__block__table {
     max-width: 100%;
     overflow: hidden;
   }
-  .box {
-    // transform: rotate(-90deg);
-  }
+
   .box__desc {
     font-size: 16px;
+    height: 100%;
   }
   .iksweb__clock {
     font-size: 16px !important;
   }
   td h2 {
     font-size: 16px;
-    max-width: 36px;
     white-space: nowrap;
-    display: flex;
-    justify-content: center;
   }
   .box__body__desc__type {
     display: none;
@@ -625,17 +619,44 @@
   }
 
   .schedulee::before {
+    display: none;
+  }
+
+  .schedulee:hover::before {
+    border: 3px solid $colorDecorViolett;
+    background-color: transparent;
     opacity: 0;
   }
-  .box {
-    position: relative;
 
+  .box {
+    height: 200px;
+    &__row {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__body__desc__style {
+      transform: rotate(90deg);
+      margin-top: auto;
+    }
+    &__btn {
+      display: block;
+      margin-top: auto;
+      position: relative;
+      z-index: 1;
+      padding-bottom: 8px;
+    }
+    position: relative;
+    &:hover {
+      border: 3px solid $colorDecorViolett;
+    }
     .more {
       display: none;
     }
 
     &:hover .more {
-      display: block;
+      display: none;
     }
   }
   // Страница о нас
@@ -811,21 +832,25 @@
   .table {
     &__link__table {
       flex-direction: column-reverse;
-      align-items: center;  
+      align-items: center;
       .table__link {
         font-size: 1.6rem;
         width: 56%;
         height: 40px;
         margin-bottom: 64px;
       }
-      .table__link__zal{
+      .table__link__zal {
         margin-bottom: 32px;
         font-size: 1.6rem;
         width: 45%;
-        height: 40px; 
+        height: 40px;
         padding: 10px 20px;
       }
     }
+  }
+  table.iksweb td,
+  table.iksweb th {
+    max-width: 44px;
   }
 }
 @media (max-width: 374px) {

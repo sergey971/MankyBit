@@ -73,10 +73,8 @@ const btnChors = document.querySelectorAll(".choreographers__col__area__btn");
 for (let i = 0; i < btnChors.length; i++) {
   const btnChor = btnChors[i];
 }
-
 //================================================================
 
-//================================================================
 document.querySelectorAll('button[data-modal]').forEach(function(button) {
   button.addEventListener('click', function() {
     const modalId = this.getAttribute('data-modal');
@@ -89,10 +87,3 @@ document.querySelectorAll('button[data-modal]').forEach(function(button) {
 
   });
 });
-
-// =================================================================
-
-// function enableScroll() {
-//   window.onscroll = function () { };
-
-// }
