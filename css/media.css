@@ -717,6 +717,12 @@
   table.iksweb th {
     max-width: 44px;
   }
+  .swiper {
+    height: 327px;
+  }
+  .video__media {
+    height: 100% !important;
+  }
 }
 @media (max-width: 374px) {
   .school__name {
