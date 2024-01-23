@@ -629,8 +629,8 @@
   }
 
   .box {
-    border: 3px solid var(--colorDecorGray, #9E9E9E);
-background: var(--colorDecorWhite10, rgba(255, 255, 255, 0.10));
+    border: 3px solid $colorDecorGray;
+    background: $colorDecorWhite10;
     height: 200px;
     &__row {
       height: 100%;
@@ -850,17 +850,26 @@ background: var(--colorDecorWhite10, rgba(255, 255, 255, 0.10));
         padding: 10px 20px;
       }
     }
-
   }
   table.iksweb td,
   table.iksweb th {
     max-width: 44px;
   }
-  .swiper{
+  .swiper {
     height: 327px;
   }
   .video__media {
     height: 100% !important ;
+  }
+  .overlay {
+    object-fit: fill;
+    width: auto;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  .video__media__none {
+    display: none !important;
   }
 }
 @media (max-width: 374px) {
