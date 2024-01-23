@@ -70,3 +70,11 @@
 .scrollable-place {
   height: 1000px;
 }
+
+@media(max-width:500px) {
+.modalDance {
+  &__row{
+    padding: 10px;
+  }
+}
+}
