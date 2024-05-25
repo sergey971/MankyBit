@@ -74,7 +74,7 @@
                 <div class="school__row">
                     <h2 class="school__desc">Танцевальная школа</h2>
                     <h1 class="school__name">Monkey Beat</h1>
-                    <a class="school__link" href="#">Записаться</a>
+                    <button class="school__link" data-modal = modalHeader>Записаться<button>
                 </div>
             </div>
             <div class="socialPhone">
@@ -94,7 +94,7 @@
                     <img src="./images/social/you.svg" alt="YouTube">
                 </a>
             </div>
-
+            @@include('modalHeader.html')
         </section>
         <section class="winners">
             <div class="winners__body">
@@ -105,6 +105,7 @@
                 </div>
             </div>
         </section>
+
     </header>
 </div>
 @@include('mobile-nav.html')

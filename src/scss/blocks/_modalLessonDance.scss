@@ -1,0 +1,104 @@
+.modalLessonDance {
+    width: 659px;
+    height: 549px;
+    max-width: 100%;
+    background-color: black;
+    
+    position: absolute;
+    top: 50%;
+    /* position the top  edge of the element at the middle of the parent */
+    left: 50%;
+    /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+    /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
+    z-index: 2;
+    border-radius: 10px;
+    /* Card's shadow */
+    box-shadow: 3px 5px 10px 0px rgba(97, 5, 153, 0.5);
+    /* colorFoneGrafit */
+    background: rgb(23, 23, 23);
+    padding-bottom: 48px;
+    display: none;
+    &__title {
+        margin-top: 48px;
+        margin-bottom: 24px;
+        max-width: 382px;
+        color: $colorHeaderForm;
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: 0%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h4 {
+            text-align: center;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 318px;
+        color: $text-color-text-white-60;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+
+        p {
+            text-align: center;
+
+        }
+    }
+
+    &__form {
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__form__input {
+        width: 100%;
+        border: 1px solid $colorHeaderForm;
+        border-radius: 10px;
+        padding: 8px 7px 16px;
+        margin-bottom: 32px;
+        color: $colorDecorGray;
+        font-size: 2rem;
+        &:last-child {
+            margin-bottom: 0px;
+
+        }
+
+        &::placeholder {
+            color: $colorFormPlaceholder;
+            
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
+    &__form__button {
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        box-shadow: $boxShodowFormButton;
+        background: $backgroundFormButton;
+        color: $colorFormButton;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+}
+.formModalLessonDance{
+    margin-bottom: 32px;
+}

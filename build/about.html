@@ -87,7 +87,7 @@
                 <div class="school__row">
                     <h2 class="school__desc">Танцевальная школа</h2>
                     <h1 class="school__name">Monkey Beat</h1>
-                    <a class="school__link" href="#">Записаться</a>
+                    <button class="school__link" data-modal = modalHeader>Записаться<button>
                 </div>
             </div>
             <div class="socialPhone">
@@ -107,7 +107,35 @@
                     <img src="./images/social/you.svg" alt="YouTube">
                 </a>
             </div>
-
+            <div class="modalHeader" id="modalHeader">
+    <div class="modalHeader__body">
+        <div class="modalHeader__content">
+            <div class="modalHeader__row">
+                <div class="chore__cross">
+                    <img class="close" onclick="closeModal('modalHeader');" src="../../images/Cross2.png" alt="крестик">
+                </div>
+                <div class="modalHeader__title">
+                    <h4>Стань частью семьи Monkey Beat!</h4>
+                </div>
+                <div class="modalHeader__desc">
+                    <p>Оставьте свои данные и мы обязательно свяжемся с вами</p>
+                </div>
+                <form action="#" class="modalHeader__form" id="modalHeader__form">
+                    <div class="formGroupHeader">
+                        <input type="text" class="modalHeader__form__input" placeholder="Стиль" required>
+                    </div>
+                    <div class="formGroupHeader">
+                        <input type="text" class="modalHeader__form__input" placeholder="Имя" required>
+                    </div>
+                    <div class="formGroupHeader">
+                        <input type="text" class="modalHeader__form__input" placeholder="Номер телефона" required>
+                    </div>
+                    <button class="modalHeader__form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
         </section>
         <section class="winners">
             <div class="winners__body">
@@ -118,6 +146,7 @@
                 </div>
             </div>
         </section>
+
     </header>
 </div>
 <!-- <div class="mobile-nav">

@@ -6,6 +6,8 @@ const config = {
 		video: './src/js/video.js',
 		swiper: './src/js/swiper.js',
 		media: './src/js/media.js',
+		sorting: './src/js/sorting.js',
+
 		// contacts: './src/js/contacts.js',
 		// about: './src/js/about.js',
 	},

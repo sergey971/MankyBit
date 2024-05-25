@@ -168,6 +168,13 @@
 }
 
 @media (max-width: 500px) {
+  svg:hover path {
+    stroke: #FCF3FF;
+    fill: #FCF3FF;
+  }
+  svg:hover circle {
+    stroke: #FCF3FF;
+  }
   .wrapper {
     &__img {
       width: 71%;
@@ -453,7 +460,6 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 68px;
-      justify-content: end;
       a {
         font-size: 1.6rem;
         &::after {
@@ -622,14 +628,16 @@
     display: none;
   }
 
-  .schedulee:hover::before {
-    border: 3px solid $colorDecorViolett;
-    background-color: transparent;
-    opacity: 0;
-  }
 
   .box {
-    border: 3px solid $colorDecorGray;
+    &:hover::before {
+      opacity: 0;
+    
+    }
+    &::before{
+      background-color: transparent;
+    }
+    border: 3px solid $colorDecorGray !important;
     background: $colorDecorWhite10;
     height: 200px;
     &__row {
@@ -650,10 +658,7 @@
       padding-bottom: 8px;
     }
     position: relative;
-    &:hover {
-      border: 3px solid $colorDecorViolett;
-      background-color: transparent;
-    }
+
     .more {
       display: none;
     }

@@ -107,9 +107,11 @@
                         <div class="choreographers__name">
                             <h2>Хореографы</h2>
                         </div>
+                        @@include('blocks/sorting.html')
+
                         <div class="choreographers__row"> 
                             <!-- 1 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img  src="./images/team/1.png" alt="">
                                 </div>
@@ -153,7 +155,7 @@
                                 </div>
                             </div>
                             <!-- 3 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/3.png" alt="">
                                 </div>
@@ -174,7 +176,7 @@
                                 </div>
                             </div>
                             <!-- 4 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/4.png" alt="">
                                 </div>
@@ -195,7 +197,7 @@
                                 </div>
                             </div>
                             <!-- 5 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/5.png" alt="">
                                 </div>
@@ -216,7 +218,7 @@
                                 </div>
                             </div>
                             <!-- 6 -->
-                            <div class="choreographers__col"> 
+                            <div class="choreographers__col" data-value = "HipHop"> 
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/6.png" alt="">
                                 </div>
@@ -1394,6 +1396,8 @@
                 </div>
             </section>
             <section class="price">
+    @@include('blocks/modalLessonDancePrice.html')
+
                 <div class="choreographers__container">
                     <div class="directions__title">
                         <h2 class="directions__body__title">Стоимость</h2>
@@ -1478,7 +1482,7 @@
                         </div>
                     </div>
                     <div class="price__btn">
-                        <a href="#!">Записаться</a>
+                        <button data-modal = modalLessonDancePrice>Записаться</button>
                     </div>
                 </div>
             </section>
@@ -1546,10 +1550,14 @@
                                         <h3>Оставьте свои данные и мы обязательно свяжемся с вами.</h3>
                                     </div>
                                     <div class="map__quest__form">
-                                        <form action="">
+                                        <form action="" id="formIndex">
                                             <div class="form__row">
-                                                <input type="text" id="name" class="name" name="name" placeholder="Имя">
-                                                <input type="text" id="phone" class="phone" name="phone" placeholder="Номер телефона">
+                                                <div class="formGroup">
+                                                    <input type="text"  id="name" class="name" name="name" placeholder="Имя" required>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <input type="text"  id="phone" class="phone" name="phone" placeholder="Номер телефона" required>
+                                                </div>
                                                 <button class="btnForm" id="btnForm" type="submit">Отправить</button>
                                             </div>
                                         </form>
@@ -1566,10 +1574,13 @@
     </div>
     @@include('blocks/modalChore.html')
     @@include('blocks/modalDance.html')
+           
+
 		<script src="./js/media.bundle.js"></script>
 		<script src="./js/main.bundle.js"></script>
 		<script src="./js/video.bundle.js"></script>
 		<script src="./js/swiper.bundle.js"></script>
+		<script src="./js/sorting.bundle.js"></script>
 
 </body>
 

@@ -1,0 +1,52 @@
+.sorting {
+    max-width: 304px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(252, 243, 255);
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    &__row {
+        display: flex;
+        padding: 0px 16px;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        line-height: 24px;  
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    &__dropdown{
+        width: 100%;
+    }
+    &__style{
+        font-size: 16px;
+        margin-right: 95px;
+    }
+    &__list__item {
+        font-size: 16px;
+        cursor: pointer;
+        text-align: start;
+
+    }
+    &__list{
+        display: none;
+    }
+    &__button {
+        font-family: "Montserrat";
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.active{
+    display: block;
+}
+
+.dropdown__input__hidden {
+    display: none;
+  }
+.color{
+    color: red;
+}

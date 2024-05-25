@@ -93,7 +93,7 @@
                 <div class="school__row">
                     <h2 class="school__desc">Танцевальная школа</h2>
                     <h1 class="school__name">Monkey Beat</h1>
-                    <a class="school__link" href="#">Записаться</a>
+                    <button class="school__link" data-modal = modalHeader>Записаться<button>
                 </div>
             </div>
             <div class="socialPhone">
@@ -113,7 +113,35 @@
                     <img src="./images/social/you.svg" alt="YouTube">
                 </a>
             </div>
-
+            <div class="modalHeader" id="modalHeader">
+    <div class="modalHeader__body">
+        <div class="modalHeader__content">
+            <div class="modalHeader__row">
+                <div class="chore__cross">
+                    <img class="close" onclick="closeModal('modalHeader');" src="../../images/Cross2.png" alt="крестик">
+                </div>
+                <div class="modalHeader__title">
+                    <h4>Стань частью семьи Monkey Beat!</h4>
+                </div>
+                <div class="modalHeader__desc">
+                    <p>Оставьте свои данные и мы обязательно свяжемся с вами</p>
+                </div>
+                <form action="#" class="modalHeader__form" id="modalHeader__form">
+                    <div class="formGroupHeader">
+                        <input type="text" class="modalHeader__form__input" placeholder="Стиль" required>
+                    </div>
+                    <div class="formGroupHeader">
+                        <input type="text" class="modalHeader__form__input" placeholder="Имя" required>
+                    </div>
+                    <div class="formGroupHeader">
+                        <input type="text" class="modalHeader__form__input" placeholder="Номер телефона" required>
+                    </div>
+                    <button class="modalHeader__form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
         </section>
         <section class="winners">
             <div class="winners__body">
@@ -124,6 +152,7 @@
                 </div>
             </div>
         </section>
+
     </header>
 </div>
 <!-- <div class="mobile-nav">
@@ -225,9 +254,51 @@
                         <div class="choreographers__name">
                             <h2>Хореографы</h2>
                         </div>
+                        <div class="sorting">
+    <div class="sorting__container">
+        <div class="sorting__body">
+            <div class="sorting__row">
+                <div class="sorting__style">Стиль</div>
+                <div class="sorting__dropdown">
+                    <div class="sorting__button" data-value="">
+                      Все
+                    </div>
+                    <ul class="sorting__list">
+                        <li class="sorting__list__item" data-value="JazzFunk">
+                            Jazz Funk
+                        </li>
+                        <li class="sorting__list__item" data-value="HipHop">
+                            Hip - Hop
+                        </li>
+                        <li class="sorting__list__item" data-value="LadyDance">
+                            Lady Dance
+                        </li>
+                        <li class="sorting__list__item" data-value="Vogue">
+                            Vogue
+                        </li>
+                        <li class="sorting__list__item" data-value="HighHeels">
+                            High - Heels
+                        </li>
+                        <li class="sorting__list__item" data-value="Strip">
+                            Strip
+                        </li>
+                        <li class="sorting__list__item" data-value="Afrochoreo">
+                            Afro choreo
+                        </li>
+                        <li class="sorting__list__item" data-value="KPop">
+                            K-Pop
+                        </li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input__hidden">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                         <div class="choreographers__row"> 
                             <!-- 1 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img  src="./images/team/1.png" alt="">
                                 </div>
@@ -271,7 +342,7 @@
                                 </div>
                             </div>
                             <!-- 3 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/3.png" alt="">
                                 </div>
@@ -292,7 +363,7 @@
                                 </div>
                             </div>
                             <!-- 4 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/4.png" alt="">
                                 </div>
@@ -313,7 +384,7 @@
                                 </div>
                             </div>
                             <!-- 5 -->
-                            <div class="choreographers__col">
+                            <div class="choreographers__col" data-value = "HipHop">
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/5.png" alt="">
                                 </div>
@@ -334,7 +405,7 @@
                                 </div>
                             </div>
                             <!-- 6 -->
-                            <div class="choreographers__col"> 
+                            <div class="choreographers__col" data-value = "HipHop"> 
                                 <div class="choreographers__col__block">
                                     <img src="./images/team/6.png" alt="">
                                 </div>
@@ -1512,6 +1583,37 @@
                 </div>
             </section>
             <section class="price">
+    <div class="modalLessonDancePrice" id="modalLessonDancePrice">
+    <div class="modalLessonDancePrice__body">
+        <div class="modalLessonDancePrice__content">
+            <div class="modalLessonDancePrice__row">
+                <div class="chore__cross">
+                    <img class="close" onclick="closeModal('modalLessonDancePrice');" src="../../images/Cross2.png" alt="крестик">
+                </div>
+                <div class="modalLessonDancePrice__title">
+                    <h4>Стань частью семьи Monkey Beat!</h4>
+                </div>
+                <div class="modalLessonDancePrice__desc">
+                    <p>Оставьте свои данные и мы обязательно свяжемся с вами</p>
+                </div>
+                <form action="#" class="modalLessonDancePrice__form" id="modalLessonDancePrice__form">
+                    <div class="formModalLessonDancePrice">
+                        <input type="text" class="modalLessonDancePrice__form__input" placeholder="Стиль" required>
+                    </div>
+                    <div class="formModalLessonDancePrice">
+                        <input type="text" class="modalLessonDancePrice__form__input" placeholder="Имя" required>
+                    </div>
+                    <div class="formModalLessonDancePrice">
+                        <input type="text" class="modalLessonDancePrice__form__input" placeholder="Номер телефона" required>
+                    </div>
+                    <button class="modalLessonDancePrice__form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
                 <div class="choreographers__container">
                     <div class="directions__title">
                         <h2 class="directions__body__title">Стоимость</h2>
@@ -1596,7 +1698,7 @@
                         </div>
                     </div>
                     <div class="price__btn">
-                        <a href="#!">Записаться</a>
+                        <button data-modal = modalLessonDancePrice>Записаться</button>
                     </div>
                 </div>
             </section>
@@ -1664,10 +1766,14 @@
                                         <h3>Оставьте свои данные и мы обязательно свяжемся с вами.</h3>
                                     </div>
                                     <div class="map__quest__form">
-                                        <form action="">
+                                        <form action="" id="formIndex">
                                             <div class="form__row">
-                                                <input type="text" id="name" class="name" name="name" placeholder="Имя">
-                                                <input type="text" id="phone" class="phone" name="phone" placeholder="Номер телефона">
+                                                <div class="formGroup">
+                                                    <input type="text"  id="name" class="name" name="name" placeholder="Имя" required>
+                                                </div>
+                                                <div class="formGroup">
+                                                    <input type="text"  id="phone" class="phone" name="phone" placeholder="Номер телефона" required>
+                                                </div>
                                                 <button class="btnForm" id="btnForm" type="submit">Отправить</button>
                                             </div>
                                         </form>
@@ -1705,6 +1811,35 @@
     <div id="Modal1" class="modal">
   <div class="modal__content">
     <section class="chore">
+
+      <div class="modalLessonDance" id="modalLessonDance">
+    <div class="modalLessonDance__body">
+        <div class="modalLessonDance__content">
+            <div class="modalLessonDance__row">
+                <div class="chore__cross">
+                    <img class="close" onclick="closeModal('modalLessonDance');" src="../../images/Cross2.png" alt="крестик">
+                </div>
+                <div class="modalLessonDance__title">
+                    <h4>Стань частью семьи Monkey Beat!</h4>
+                </div>
+                <div class="modalLessonDance__desc">
+                    <p>Оставьте свои данные и мы обязательно свяжемся с вами</p>
+                </div>
+                <form action="#" class="modalLessonDance__form" id="modalLessonDance__form">
+                    <div class="formModalLessonDance">
+                        <input type="text" class="modalLessonDance__form__input" placeholder="Имя" required>
+                    </div>
+                    <div class="formModalLessonDance">
+                        <input type="text" class="modalLessonDance__form__input" placeholder="Номер телефона" required>
+                    </div>
+                    <button class="modalLessonDance__form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
       <div class="chore__container">
         <div class="chore__body">
           <div class="chore__cross">
@@ -1883,38 +2018,40 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button data-modal = "modalLessonDance" class="chore__btn">Пробное занятие</button>
                 </div>
+                
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -2105,38 +2242,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -2327,38 +2465,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -2549,38 +2688,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -2771,38 +2911,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -2993,38 +3134,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -3215,38 +3357,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -3437,38 +3580,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -3659,38 +3803,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -3881,38 +4026,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -4103,38 +4249,39 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
+                  
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -4325,38 +4472,37 @@
               <div class="chore__desc">
                 <div class="chore__desc__row">
                   <div class="chore__name"><h3>Зимин Максим</h3></div>
+
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
               <!-- Repeat the structure for additional items as needed -->
               <div class="chore__desc">
                 <div class="chore__desc__row">
-                  <div class="chore__name"><h3>Зимин Максим</h3></div>
                   <div class="chore__steel">
                     <p>Hip - Hop 12+</p>
                   </div>
                   <div class="chore__time">
                     <p>вт / чт / сб 18:30 - 19:30</p>
                   </div>
-                  <a href="#" class="chore__btn">Пробное занятие</a>
+                  <button class="chore__btn">Пробное занятие</button>
                 </div>
               </div>
             </div>
@@ -4396,7 +4542,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -4574,7 +4720,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -4752,7 +4898,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -4930,7 +5076,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -5108,7 +5254,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -5286,7 +5432,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -5464,7 +5610,7 @@
             
               <!-- Изображение для экранов с шириной менее 500px -->
               <img class="video__media video__media__none " src="https://i.ytimg.com/vi/nnrS20Nswdo/maxresdefault.jpg" alt="Команда" />
-              <img class="video__media overlay" src="../../images/team/bgTeamMedia.png" alt="Команда" />
+              <img class="video__media overlay" src="./images/team/bgTeamMedia.png" alt="Команда" />
             </picture>
           </a>
           <button class="video__button" aria-label="Запустить видео">
@@ -5615,6 +5761,7 @@
   </div>
 </div>
 <!-- ========================= -->
+
 <script>
   function closeModal(modalId) {
     const modal = document.getElementById(modalId);
@@ -5622,7 +5769,7 @@
       modal.classList.remove("modal-open");
       modal.addEventListener('click', (event)=>{
         modal.classList.remove("modal-open");
-        document.querySelector('body').style.overflow = "visible";
+        document.querySelector('body').style.overflow = "visible"; 
 
       });
 
@@ -5631,12 +5778,16 @@
   }
 </script>
 
+
     
+
+           
 
 		<script src="./js/media.bundle.js"></script>
 		<script src="./js/main.bundle.js"></script>
 		<script src="./js/video.bundle.js"></script>
 		<script src="./js/swiper.bundle.js"></script>
+		<script src="./js/sorting.bundle.js"></script>
 
 </body>
 

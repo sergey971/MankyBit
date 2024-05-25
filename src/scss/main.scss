@@ -12,6 +12,12 @@
   display: none;
 
 }
+.error {
+  border: 1px solid $colorFaultRed !important;
+}
+.success {
+  border: 1px solid rgb(11, 114, 11) !important;
+}
 .fone2 {
   display: none;
 }
@@ -808,7 +814,7 @@ table .iksweb {
     // top: -49px;
     // left: 51px;
 
-    a {
+    button {
       color: $text-color-text-white;
       font-family: "Montserrat";
       font-size: 32px;
@@ -819,21 +825,22 @@ table .iksweb {
       border-radius: 10px;
       background: $button-color-button-2-dark;
       box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.5);
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100px;
+        box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.5);
+        border-radius: 342px;
+        background: $color-decor-violett;
+        filter: blur(50px);
+        z-index: -1;
+      }
     }
 
-    a::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 300px;
-      height: 100px;
-      box-shadow: 4px 6px 6px 0px rgba(97, 5, 153, 0.5);
-      border-radius: 342px;
-      background: $color-decor-violett;
-      filter: blur(50px);
-      z-index: -1;
-    }
+    
   }
 }
 
@@ -929,7 +936,7 @@ table .iksweb {
   }
 
   &__quest {
-    z-index: 2;
+    // z-index: 1;
     margin-top: 19px;
   }
 
@@ -950,7 +957,7 @@ table .iksweb {
     }
 
     &__img {
-      z-index: 2;
+      // z-index: 1;
     }
   }
 
@@ -1037,7 +1044,7 @@ table .iksweb {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 3px solid $colorDecorViolett;
+    border: 5px solid $colorDecorViolett;
     background-color: $colorDecorViolet50;
     opacity: 0;
     transition: opacity 0.3s;
@@ -2679,3 +2686,23 @@ table .iksweb {
 
   }
 }
+/* Стили для нормального состояния */
+circle {
+  transition: stroke 0.3s, fill 0.3s;
+}
+
+path {
+  transition: stroke 0.3s, fill 0.3s;
+}
+
+/* Стили при наведении */
+svg:hover circle {
+  stroke: $color-decor-violett;
+  // fill: #НОВЫЙ_ЦВЕТ_ЗАЛИВКИ_КРУГА;
+}
+
+svg:hover path {
+  stroke: $color-decor-violett;
+  fill: $color-decor-violett;
+}
+
